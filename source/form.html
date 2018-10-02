@@ -8,7 +8,7 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo logo">
+    <a class="page-header__logo logo" href="index.html">
       <img class="page-header__logo-image" src="" width="75" height="22" alt="Мобильное приложение Pink">
     </a>
     <nav class="main-nav" aria-label="Меню">
@@ -31,66 +31,80 @@
       </div>
     </nav>
     <div class="page-title">
-      <h1 class="page-title__text">Конкурск на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="page-title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </div>
   </header>
   <main class="page-main">
     <section class="page-main__form">
-      <p class="page-main__losung">Поделитесь своей историей и получите шанс выиграть приз - 1000 миль
+      <p class="page-main__slogan">Поделитесь своей историей и получите шанс выиграть приз - 1000 миль
         на вашу бонусную карту</p>
         <form class="competition-form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="competition-form__user text-form">
-            <label class="text-form__label" for="user-surname">Фамилия:</label>
-            <input class="text-form__input" type="text" id="user-surname" name="surname" placeholder="Укажите фамилию*" value="">
-            <label class="text-form__label" for="user-name">Имя:</label>
-            <input class="text-form__input" type="text" id="user-name" name="name" placeholder="Введите ваше имя*" value="">
-            <label class="text-form__label" for="user-patronymic">Отчество:</label>
-            <input class="text-form__input" type="text" id="user-patronymic" name="patronymic" placeholder="Ну и отчество тоже" value="">
+          <fieldset class="competition-form__user">
+            <label class="label label--text" for="user-surname">Фамилия:
+              <input class="input" type="text" id="user-surname" name="surname" placeholder="Укажите фамилию*" value="">
+            </label>
+            <label class="label label--text" for="user-name">Имя:
+              <input class="input" type="text" id="user-name" name="name" placeholder="Введите ваше имя*" value="">
+            </label>
+            <label class="label label--text" for="user-patronymic">Отчество:
+              <input class="input" type="text" id="user-patronymic" name="patronymic" placeholder="Ну и отчество тоже" value="">
+            </label>
           </fieldset>
-          <fieldset class="competition-form__attainment choice-form">
+          <fieldset class="competition-form__attainment">
             <h2 class="competition-form__title">Ваши безбашенные достижения в путешествии</h2>
-            <input class="choice-form__input" type="checkbox" name="photo-attainment" id="shark" value="shark" checked>
-            <label class="choice-form__label" for="shark">Сделал селфи с акулой</label>
-            <input class="choice-form__input" type="checkbox" name="photo-attainment" id="beach" value="coal" checked>
-            <label class="choice-form__label" for="beach">Обгорел на пляже</label>
-            <input class="choice-form__input" type="checkbox" name="photo-attainment" id="chack-norris" value="norris">
-            <label class="choice-form__label" for="chack-norris">Видел Чака Норриса</label>
-            <input class="choice-form__input" type="checkbox" name="photo-attainment" id="souvenir" value="trinket">
-            <label class="choice-form__label" for="souvenir">Накупил сувениров</label>
-            <input class="choice-form__input" type="checkbox" name="photo-attainment" id="tower" value="pisa" checked>
-            <label class="choice-form__label" for="tower">Удержал башню</label>
-            <input class="choice-form__input" type="checkbox" name="photo-attainment" id="hotel" value="chaos">
-            <label class="choice-form__label" for="hotel">Разгромил отель</label>
+            <label class="label label--checkbox" for="shark">Сделал селфи с акулой
+              <input class="checkbox" type="checkbox" name="photo-attainment" id="shark" value="shark" checked>
+            </label>
+            <label class="label label--checkbox" for="beach">Обгорел на пляже
+              <input class="checkbox" type="checkbox" name="photo-attainment" id="beach" value="coal" checked>
+            </label>
+            <label class="label label--checkbox" for="chack-norris">Видел Чака Норриса
+              <input class="checkbox" type="checkbox" name="photo-attainment" id="chack-norris" value="norris">
+            </label>
+            <label class="label label--checkbox" for="souvenir">Накупил сувениров
+              <input class="checkbox" type="checkbox" name="photo-attainment" id="souvenir" value="trinket">
+            </label>
+            <label class="label label--checkbox" for="tower">Удержал башню
+              <input class="checkbox" type="checkbox" name="photo-attainment" id="tower" value="pisa" checked>
+            </label>
+            <label class="label label--checkbox" for="hotel">Разгромил отель
+              <input class="checkbox" type="checkbox" name="photo-attainment" id="hotel" value="chaos">
+            </label>
           </fieldset>
-          <fieldset class="competition-form__contacts text-form">
-              <label class="text-form__label" for="user-phone">Номер телефона</label>
-              <input class="text-form__input" type="tel" id="user-phone" name="phone" placeholder="Номер, пожалуйста" value="">
-              <label class="text-form__label" for="user-mail">Адрес почты</label>
-              <input class="text-form__input" type="email" id="user-mail" name="mail" placeholder="Введите почту*" value="">
+          <fieldset class="competition-form__contacts">
+            <label class="label label--text" for="user-phone">Номер телефона
+              <input class="input" type="tel" id="user-phone" name="phone" placeholder="Номер, пожалуйста" value="">
+            </label>
+            <label class="label label--text" for="user-mail">Адрес почты
+              <input class="input" type="email" id="user-mail" name="mail" placeholder="Введите почту*" value="">
+            </label>
           </fieldset>
-          <fieldset class="competition-form__system choice-form">
+          <fieldset class="competition-form__system">
             <h2 class="competition-form__title">С каким приложением путешествовали?</h2>
-            <input class="choice-form__input choice-form__input--radio" type="radio" id="system-ios" name="system" value="ios" checked>
-            <label class="choice-form__label" for="system-iOS">Pink для iOS</label>
-            <input class="choice-form__input choice-form__input--radio" type="radio" id="system-android" name="system" value="andrioid">
-            <label class="choice-form__label" for="system-iandroid">Pink для Android</label>
-            <input class="choice-form__input choice-form__input--radio" type="radio" id="system-windows" name="system" value="windows">
-            <label class="choice-form__label" for="system-windows">Windows Phone</label>
+            <label class="label label--radio" for="system-iOS">Pink для iOS
+              <input class="radio" type="radio" id="system-ios" name="system" value="ios" checked>
+            </label>
+            <label class="label label--radio" for="system-iandroid">Pink для Android
+              <input class="radio" type="radio" id="system-android" name="system" value="andrioid">
+            </label>
+            <label class="label label--radio" for="system-windows">Windows Phone
+              <input class="radio" type="radio" id="system-windows" name="system" value="windows">
+            </label>
           </fieldset>
-          <fieldset class="competition-form__emotions emotions-form">
-            <label class="emotions-form__label" for="emotions"><h2 class="competition-form__title">Опишите свои эмоции</h2></label>
-            <textarea class="emotions-form__text" name="messege" id="emotions" cols="30" rows="10"></textarea>
+          <fieldset class="competition-form__emotions">
+            <label class="label label--text" for="emotions"><h2 class="competition-form__title">Опишите свои эмоции</h2></label>
+            <textarea class="text" name="messege" id="emotions" cols="30" rows="10"></textarea>
           </fieldset>
-          <button class="competition-form__button green-btn" type="submit">Отправить форму</button>
+          <button class="competition-form__button button button--green" type="submit">Отправить форму</button>
+          <small class="competition-form__legend competition-form__legend--top">
+            <sup>*</sup> — Обязательные поля
+          </small>
         </form>
-        <small class="competition-form__legend competition-form__legend--top">
-          <sup>*</sup> — Обязательные поля
-        </small>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo" href="">
+      <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-img" src="http://placehold.it/147x40" alt="Мобильное приложение Pink" width="147" height="40">
       </a>
       <div class="page-footer__social social">
@@ -114,19 +128,19 @@
       </div>
     </div>
   </footer>
-  <section class="modal-sent modal">
+  <section class="modal modal--sent">
     <h3 class="modal__title">Ваша заявка отправлена</h3>
     <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам.
       В ближайшее время мы рассмотрим ее и оповестим вас.
     </p>
-    <div class="modal__button open-btn">
-      <button class="open-btn green-btn" type="button">Закрыть окно</button>
+    <div class="modal__button button">
+      <button class="button button--green" type="button">Закрыть окно</button>
     </div>
   </section>
-  <section class="modal-error modal">
+  <section class="modal modal--error">
     <h3 class="modal__title">Что-то пошло не так!</h3>
     <p class="modal__text">Проверь поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="open-btn green-btn" type="button">Ок</button>
+    <button class="modal__button button button--green" type="button">Ок</button>
   </section>
 </body>
 </html>

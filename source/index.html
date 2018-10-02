@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="http://placehold.it/75x32" width="75" height="22" alt="Мобильное приложение Pink">
       </a>
       <nav class="main-nav" aria-label="Меню">
@@ -30,21 +30,21 @@
       </nav>
       <section class="apps-store">
         <h1 class="visually-hidden">Взгляните на жизнь иначе!</h1>
-        <button class="apps-store__button button-round" type="button">Скачать приложение</button>
+        <a class="apps-store__button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
         <ul class="apps-store__list">
           <li class="apps-store__item">
             <a class="store-link store-link--apple" href="#">
-              <img class="store-link--logo" src="http://placehold.it/47x56" width="47" height="56" alt="Apple">
+              <img class="apps-store__logo" src="http://placehold.it/47x56" width="47" height="56" alt="Apple">
             </a>
           </li>
           <li class="apps-store__item">
             <a class="store-link store-link--google" href="#">
-              <img class="store-link--logo" src="http://placehold.it/43x47" width="43" height="47" alt="Android">
+              <img class="apps-store__logo" src="http://placehold.it/43x47" width="43" height="47" alt="Android">
             </a>
           </li>
           <li class="apps-store__item">
             <a class="store-link store-link--microsoft" href="#">
-              <img class="store-link--logo" src="http://placehold.it/44x41" width="44" height="41" alt="Windows Phone">
+              <img class="apps-store__logo" src="http://placehold.it/44x41" width="44" height="41" alt="Windows Phone">
             </a>
           </li>
         </ul>
@@ -53,7 +53,7 @@
     </header>
     <main class="page-main">
       <section class="advantage">
-        <h2 class="advantage__losung">Устали от серости? Нам есть что вам предложить!</h2>
+        <h2 class="advantage__slogan">Устали от серости? Нам есть что вам предложить!</h2>
         <ul class="advantage__list">
           <li class="advantage__item">
             <b class="advantage__slogan">Поднимает настроение</b>
@@ -93,18 +93,18 @@
               <p class="reviews__text">&laquo;Текст отзыва!&raquo;</p>
             </blockquote>
           </div>
-          <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+          <p class="reviews__toggles toggle">
+            <button class="toggle__button" type="button">1</button>
+            <button class="toggle__button" type="button">2</button>
+            <button class="toggle__button" type="button">3</button>
           </p>
         </div>
       </section>
       <section class="rate">
         <h2 class="visually-hidden"></h2>
-        <div class="rate-_wrapper slider">
+        <div class="rate__wrapper slider">
           <div class="rate__list slider-list">
-            <table class="rate__item slider__item">
+            <table class="rate__item slider-item">
               <tr>
                 <td class="rate__price" colspan="2">База 1,99 USD</td>
               </tr>
@@ -182,16 +182,16 @@
           </table>-->
           </div>
         </div>
-        <p class="rate__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+        <p class="rate__toggles toggle">
+          <button class="toggle__button" type="button">1</button>
+          <button class="toggle__button" type="button">2</button>
+          <button class="toggle__button" type="button">3</button>
         </p>
       </section>
       <div class="contacts">
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <div class="contacts-phone">
-          <span class="contacts__title">Звоните:</span>
+          <span class="contacts__text">Звоните:</span>
           <a class="contacts-item" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </div>
         <div class="contacts-mail">
