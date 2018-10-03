@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo logo" href="index.html">
-      <img class="page-header__logo-image" src="" width="75" height="22" alt="Мобильное приложение Pink">
+      <img class="logo__img" src="" width="75" height="22" alt="Мобильное приложение Pink">
     </a>
     <nav class="main-nav" aria-label="Меню">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -40,60 +40,77 @@
         на вашу бонусную карту</p>
         <form class="competition-form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="competition-form__user">
-            <label class="label label--text" for="user-surname">Фамилия:
-              <input class="input" type="text" id="user-surname" name="surname" placeholder="Укажите фамилию*" value="">
-            </label>
-            <label class="label label--text" for="user-name">Имя:
-              <input class="input" type="text" id="user-name" name="name" placeholder="Введите ваше имя*" value="">
-            </label>
-            <label class="label label--text" for="user-patronymic">Отчество:
-              <input class="input" type="text" id="user-patronymic" name="patronymic" placeholder="Ну и отчество тоже" value="">
-            </label>
+            <div class="input">
+              <label class="input__label" for="user-surname">Фамилия:</label>
+              <input class="input__control" type="text" id="user-surname" name="surname" placeholder="Укажите фамилию*" value="">
+            </div>
+            <div class="input">
+              <label class="input__label" for="user-name">Имя:</label>
+              <input class="input__control" type="text" id="user-name" name="name" placeholder="Введите ваше имя*" value="">
+            </div>
+            <div class="input">
+              <label class="input__label" for="user-patronymic">Отчество:</label>
+              <input class="input__control" type="text" id="user-patronymic" name="patronymic" placeholder="Ну и отчество тоже" value="">
+            </div>
           </fieldset>
           <fieldset class="competition-form__attainment">
-            <h2 class="competition-form__title">Ваши безбашенные достижения в путешествии</h2>
-            <label class="label label--checkbox" for="shark">Сделал селфи с акулой
-              <input class="checkbox" type="checkbox" name="photo-attainment" id="shark" value="shark" checked>
-            </label>
-            <label class="label label--checkbox" for="beach">Обгорел на пляже
-              <input class="checkbox" type="checkbox" name="photo-attainment" id="beach" value="coal" checked>
-            </label>
-            <label class="label label--checkbox" for="chack-norris">Видел Чака Норриса
-              <input class="checkbox" type="checkbox" name="photo-attainment" id="chack-norris" value="norris">
-            </label>
-            <label class="label label--checkbox" for="souvenir">Накупил сувениров
-              <input class="checkbox" type="checkbox" name="photo-attainment" id="souvenir" value="trinket">
-            </label>
-            <label class="label label--checkbox" for="tower">Удержал башню
-              <input class="checkbox" type="checkbox" name="photo-attainment" id="tower" value="pisa" checked>
-            </label>
-            <label class="label label--checkbox" for="hotel">Разгромил отель
-              <input class="checkbox" type="checkbox" name="photo-attainment" id="hotel" value="chaos">
-            </label>
+            <legend class="competition-form__title">Ваши безбашенные достижения в путешествии</legend>
+            <div class="checkbox">
+              <label class="checkbox__label" for="shark">Сделал селфи с акулой</label>
+              <input class="checkbox__control" type="checkbox" name="photo-attainment" id="shark" value="shark" checked>
+            </div>
+            <div class="checkbox">
+              <label class="checkbox__label" for="beach">Обгорел на пляже</label>
+              <input class="checkbox__control" type="checkbox" name="photo-attainment" id="beach" value="coal" checked>
+            </div>
+            <div class="checkbox">
+              <label class="checkbox__label" for="chack-norris">Видел Чака Норриса</label>
+              <input class="checkbox__control" type="checkbox" name="photo-attainment" id="chack-norris" value="norris">
+            </div>
+            <div class="checkbox">
+              <label class="checkbox__label" for="souvenir">Накупил сувениров</label>
+              <input class="checkbox__control" type="checkbox" name="photo-attainment" id="souvenir" value="trinket">
+            </div>
+            <div class="checkbox">
+              <label class="checkbox__label" for="tower">Удержал башню</label>
+              <input class="checkbox__control" type="checkbox" name="photo-attainment" id="tower" value="pisa" checked>
+            </div>
+            <div class="checkbox">
+              <label class="checkbox__label" for="hotel">Разгромил отель</label>
+              <input class="checkbox__control" type="checkbox" name="photo-attainment" id="hotel" value="chaos">
+            </div>
           </fieldset>
           <fieldset class="competition-form__contacts">
-            <label class="label label--text" for="user-phone">Номер телефона
-              <input class="input" type="tel" id="user-phone" name="phone" placeholder="Номер, пожалуйста" value="">
-            </label>
-            <label class="label label--text" for="user-mail">Адрес почты
-              <input class="input" type="email" id="user-mail" name="mail" placeholder="Введите почту*" value="">
-            </label>
+            <div class="input">
+              <label class="input__label" for="user-phone">Номер телефона</label>
+              <input class="input__control" type="tel" id="user-phone" name="phone" placeholder="Номер, пожалуйста" value="">
+            </div>
+            <div class="input">
+              <label class="input__label" for="user-mail">Адрес почты</label>
+              <input class="input__control" type="email" id="user-mail" name="mail" placeholder="Введите почту*" value="">
+            </div>
           </fieldset>
           <fieldset class="competition-form__system">
-            <h2 class="competition-form__title">С каким приложением путешествовали?</h2>
-            <label class="label label--radio" for="system-iOS">Pink для iOS
-              <input class="radio" type="radio" id="system-ios" name="system" value="ios" checked>
-            </label>
-            <label class="label label--radio" for="system-iandroid">Pink для Android
-              <input class="radio" type="radio" id="system-android" name="system" value="andrioid">
-            </label>
-            <label class="label label--radio" for="system-windows">Windows Phone
-              <input class="radio" type="radio" id="system-windows" name="system" value="windows">
-            </label>
+            <legend class="competition-form__title">С каким приложением путешествовали?</legend>
+            <div class="radio">
+              <label class="radio__label" for="system-iOS">Pink для iOS</label>
+              <input class="radio__control" type="radio" id="system-ios" name="system" value="ios" checked>
+            </div>
+            <div class="radio">
+              <label class="radio__label" for="system-iandroid">Pink для Android</label>
+              <input class="radio__control" type="radio" id="system-android" name="system" value="andrioid">
+            </div>
+            <div class="radio">
+              <label class="radio__label" for="system-windows">Windows Phone</label>
+              <input class="radio__control" type="radio" id="system-windows" name="system" value="windows">
+            </div>
           </fieldset>
           <fieldset class="competition-form__emotions">
-            <label class="label label--text" for="emotions"><h2 class="competition-form__title">Опишите свои эмоции</h2></label>
-            <textarea class="text" name="messege" id="emotions" cols="30" rows="10"></textarea>
+            <legend class="competition-form__title">Опишите свои эмоции</legend>
+            <div class="textarea">
+              <label class="textarea__label" for="emotions"></label>
+              <textarea class="textarea__control" name="messege" id="emotions"></textarea>
+            </div>
           </fieldset>
           <button class="competition-form__button button button--green" type="submit">Отправить форму</button>
           <small class="competition-form__legend competition-form__legend--top">
@@ -122,7 +139,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
           <img src="http://placehold.it/27x34" alt="HTML Academy" width="27" height="34">
         </a>
       </div>

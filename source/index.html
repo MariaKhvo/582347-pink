@@ -6,8 +6,8 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/75x32" width="75" height="22" alt="Мобильное приложение Pink">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__img" src="http://placehold.it/75x32" width="75" height="22" alt="Мобильное приложение Pink">
       </a>
       <nav class="main-nav" aria-label="Меню">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -77,18 +77,18 @@
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
-          <div class="reviews__list slider-list">
-            <blockquote class="reviews__item slider-item">
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
               <cite class="reviews__author-name">Николай Петров</cite>
               <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть
                 на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
                 фотографии!&raquo;</p>
             </blockquote>
-            <blockquote class="reviews__item slider-item">
+            <blockquote class="reviews__item slider__item">
               <cite class="reviews__author-name">Неизвестный</cite>
               <p class="reviews__text">&laquo;Текст отзыва!&raquo;</p>
             </blockquote>
-            <blockquote class="reviews__item slider-item">
+            <blockquote class="reviews__item slider__item">
               <cite class="reviews__author-name">Неизвестный</cite>
               <p class="reviews__text">&laquo;Текст отзыва!&raquo;</p>
             </blockquote>
@@ -102,84 +102,34 @@
       </section>
       <section class="rate">
         <h2 class="visually-hidden"></h2>
-        <div class="rate__wrapper slider">
-          <div class="rate__list slider-list">
-            <table class="rate__item slider-item">
+        <div class="rate__wrapper">
+          <div class="rate__list">
+            <table class="rate__item">
               <tr>
-                <td class="rate__price" colspan="2">База 1,99 USD</td>
+                <th class="rate__title"></th>
+                <th class="rate__title">База 1,99 USD</th>
+                <th class="rate__title">Стандарт 3,99 USD</th>
+                <th class="rate__title">Анлим 9,99 USD</th>
               </tr>
               <tr>
-                <td class="rate__function-program">Розовый фильтр</td>
-                <td class="rate__function-program"><img src="http://placehold.it/31x21" alt="yes" width="31" height="21"></td>
+                <td class="rate__function-program rate__function-program--name">Розовый фильтр</td>
+                <td class="rate__function-program rate__function-program--yes"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
+                <td class="rate__function-program rate__function-program--no"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
+                <td class="rate__function-program rate__function-program--no"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
               </tr>
               <tr>
-                <td class="rate__function-program">Смайлики/td>
-                <td class="rate__function-program"><img src="http://placehold.it/27x26" alt="no" width="27" height="26"></td>
+                <td class="rate__function-program rate__function-program--name">Смайлики</td>
+                <td class="rate__function-program rate__function-program--no"><img src="http://placehold.it/27x26" alt="no" width="27" height="26"></td>
+                <td class="rate__function-program rate__function-program--yes"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
+                <td class="rate__function-program rate__function-program--yes"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
               </tr>
               <tr>
-                <td class="rate__function-program">Комментарии</td>
-                <td class="rate__function-program"><img src="http://placehold.it/27x26" alt="no" width="27" height="26"></td>
-              </tr>
-            </table>
-            <table class="rate__item slider__item rate__item slider__item--popular">
-                <tr>
-                  <td class="rate__price" colspan="2">Стандарт 3,99 USD</td>
-                </tr>
-                <tr>
-                  <td class="rate__function-program">Розовый фильтр</td>
-                  <td class="rate__function-program"><img src="http://placehold.it/31x21" alt="yes" width="31" height="21"></td>
-                </tr>
-                <tr>
-                  <td class="rate__function-program">Смайлики/td>
-                  <td class="rate__function-program"><img src="http://placehold.it/31x21" alt="yes" width="31" height="21"></td>
-                </tr>
-                <tr>
-                  <td class="rate__function-program">Комментарии</td>
-                  <td class="rate__function-program"><img src="http://placehold.it/27x26" alt="no" width="27" height="26"></td>
-                </tr>
-              </table>
-              <table class="rate__item slider__item">
-              <tr>
-                <td class="rate__price" colspan="2">Анлим 9,99 USD</td>
-              </tr>
-              <tr>
-                <td class="rate__function-program">Розовый фильтр</td>
-                <td class="rate__function-program"><img src="http://placehold.it/31x21" alt="yes" width="31" height="21"></td>
-              </tr>
-              <tr>
-                <td class="rate__function-program">Смайлики/td>
-                <td class="rate__function-program"><img src="http://placehold.it/31x21" alt="yes" width="31" height="21"></td>
-              </tr>
-              <tr>
-                <td class="rate__function-program">Комментарии</td>
-                <td class="rate__function-program"><img src="http://placehold.it/31x21" alt="yes" width="31" height="21"></td>
+                <td class="rate__function-program rate__function-program--name">Комментарии</td>
+                <td class="rate__function-program rate__function-program--no"><img src="http://placehold.it/27x26" alt="no" width="27" height="26"></td>
+                <td class="rate__function-program rate__function-program--no"><img src="http://placehold.it/27x26" alt="no" width="27" height="26"></td>
+                <td class="rate__function-program rate__function-program--yes"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
               </tr>
             </table>
-            <!-- Десктопный вариант
-            <tr>
-              <td class="rate__price">База 1,99 USD</td>
-              <td class="rate__price">Стандарт 3,99 USD</td>
-              <td class="rate__price">Анлим 9,99 USD</td>
-            </tr>
-            <tr>
-              <td class="rate__function-program rate__function-program--name">Розовый фильтр</td>
-              <td class="rate__function-program"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
-              <td class="rate__function-program"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
-              <td class="rate__function-program"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
-            </tr>
-            <tr>
-              <td class="rate__function-program rate__function-program--name">Смайлики</td>
-              <td class="rate__function-program"><img src="http://placehold.it/27x26" alt="no" width="27" height="26"></td>
-              <td class="rate__function-program"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
-              <td class="rate__function-program"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
-            </tr>
-            <tr>
-              <td class="rate__function-program rate__function-program--name">Комментарии</td>
-              <td class="rate__function-program"><img src="http://placehold.it/27x26" alt="no" width="27" height="26"></td>
-              <td class="rate__function-program"><img src="http://placehold.it/27x26" alt="no" width="27" height="26"></td>
-              <td class="rate__function-program"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
-            </tr>
-          </table>-->
           </div>
         </div>
         <p class="rate__toggles toggle">
@@ -192,15 +142,15 @@
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <div class="contacts__phone">
           <span class="contacts__text">Звоните:</span>
-          <a class="contacts__item" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </div>
-        <div class="contacts-mail">
+        <div class="contacts__mail">
           <span class="contacts__text">Пишите:</span>
-          <a class="contacts__item" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
-        <div class="contacts-adress">
+        <div class="contacts__adress">
           <span class="contacts__text">Приезжайте в гости:</span>
-          <p class="contacts-item contacts-item--adress">ул. Большая Конюшенная, 19/8 </p>
+          <p class="contacts__info">ул. Большая Конюшенная, 19/8 </p>
         </div>
       </div>
       <div class="map">
