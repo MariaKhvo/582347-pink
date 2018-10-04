@@ -5,8 +5,157 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="page-header">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__img" src="http://placehold.it/75x32" width="75" height="22" alt="Мобильное приложение Pink">
+      </a>
+      <nav class="main-nav" aria-label="Меню">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section class="apps-store">
+        <h1 class="visually-hidden">Взгляните на жизнь иначе!</h1>
+        <a class="apps-store__button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+        <ul class="apps-store__list">
+          <li class="apps-store__item">
+            <a class="store-link store-link--apple" href="#">
+              <img class="apps-store__logo" src="http://placehold.it/47x56" width="47" height="56" alt="Apple">
+            </a>
+          </li>
+          <li class="apps-store__item">
+            <a class="store-link store-link--google" href="#">
+              <img class="apps-store__logo" src="http://placehold.it/43x47" width="43" height="47" alt="Android">
+            </a>
+          </li>
+          <li class="apps-store__item">
+            <a class="store-link store-link--microsoft" href="#">
+              <img class="apps-store__logo" src="http://placehold.it/44x41" width="44" height="41" alt="Windows Phone">
+            </a>
+          </li>
+        </ul>
+        <p class="apps-store__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8.</p>
+      </section>
+    </header>
+    <main class="page-main">
+      <section class="advantage">
+        <h2 class="advantage__slogan">Устали от серости? Нам есть что вам предложить!</h2>
+        <ul class="advantage__list">
+          <li class="advantage__item">
+            <b class="advantage__slogan">Поднимает настроение</b>
+            <p class="advantage__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально
+              в несколько кликов!</p>
+            <img src="http://placehold.it/157x1320" alt="Фото в сером" width="157" height="320">
+          </li>
+          <li class="advantage__item">
+            <b class="advantage__slogan">Меняет мир вокруг</b>
+            <p class="advantage__description">Сделайте снимок и украсьте его смайликом или текстовой подписью,
+              чтобы учить эффект</p>
+            <img src="http://placehold.it/157x320" alt="Фото в розовом" width="157" height="320">
+          </li>
+          <li class="advantage__item">
+            <b class="advantage__slogan">Заводит новых друзей</b>
+            <p class="advantage__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <img src="http://placehold.it/157x320" alt="Фото с смайликом" width="157" height="320">
+          </li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть
+                на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+                фотографии!&raquo;</p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Неизвестный</cite>
+              <p class="reviews__text">&laquo;Текст отзыва!&raquo;</p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Неизвестный</cite>
+              <p class="reviews__text">&laquo;Текст отзыва!&raquo;</p>
+            </blockquote>
+          </div>
+          <p class="reviews__toggles toggle">
+            <button class="toggle__button" type="button">1</button>
+            <button class="toggle__button" type="button">2</button>
+            <button class="toggle__button" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="rate">
+        <h2 class="visually-hidden"></h2>
+        <div class="rate__wrapper">
+          <div class="rate__list">
+            <table class="rate__item">
+              <tr>
+                <th class="rate__title"></th>
+                <th class="rate__title">База 1,99 USD</th>
+                <th class="rate__title">Стандарт 3,99 USD</th>
+                <th class="rate__title">Анлим 9,99 USD</th>
+              </tr>
+              <tr>
+                <td class="rate__function-program rate__function-program--name">Розовый фильтр</td>
+                <td class="rate__function-program rate__function-program--yes"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
+                <td class="rate__function-program rate__function-program--no"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
+                <td class="rate__function-program rate__function-program--no"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
+              </tr>
+              <tr>
+                <td class="rate__function-program rate__function-program--name">Смайлики</td>
+                <td class="rate__function-program rate__function-program--no"><img src="http://placehold.it/27x26" alt="no" width="27" height="26"></td>
+                <td class="rate__function-program rate__function-program--yes"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
+                <td class="rate__function-program rate__function-program--yes"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
+              </tr>
+              <tr>
+                <td class="rate__function-program rate__function-program--name">Комментарии</td>
+                <td class="rate__function-program rate__function-program--no"><img src="http://placehold.it/27x26" alt="no" width="27" height="26"></td>
+                <td class="rate__function-program rate__function-program--no"><img src="http://placehold.it/27x26" alt="no" width="27" height="26"></td>
+                <td class="rate__function-program rate__function-program--yes"><img src="http://placehold.it/31x21" alt="yes" width="21" height="21"></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <p class="rate__toggles toggle">
+          <button class="toggle__button" type="button">1</button>
+          <button class="toggle__button" type="button">2</button>
+          <button class="toggle__button" type="button">3</button>
+        </p>
+      </section>
+      <div class="contacts">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <div class="contacts__phone">
+          <span class="contacts__text">Звоните:</span>
+          <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__mail">
+          <span class="contacts__text">Пишите:</span>
+          <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__adress">
+          <span class="contacts__text">Приезжайте в гости:</span>
+          <p class="contacts__info">ул. Большая Конюшенная, 19/8 </p>
+        </div>
+      </div>
+      <div class="map">
+        <img src="http://placehold.it/320x218" alt="Карта" width="320" height="218">
+      </div>
+    </main>
   </body>
 </html>

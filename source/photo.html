@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="page-header__logo logo">
+      <img class="logo__img" src="" width="75" height="22" alt="Мобильное приложение Pink">
+    </a>
+    <nav class="main-nav" aria-label="Меню">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-title">
+      <h1 class="page-title__text">Фотографии пользователей</h1>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="user-photo">
+      <p class="user-photo__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите,
+        как не хватает ваших?</p>
+      <div class="user-photo__list">
+        <div class="user-photo__item">
+          <div class="user-photo__image user-photo__image--first">
+            <img class="user-photo__image-mobile" src="http://placehold.it/320x137" alt="Фото пользователя" width="320" height="137">
+          </div>
+          <article class="user-photo__comment">
+            <a class="user-photo__author" href="#">Анна</a>
+            <time class="user-photo__time-counter" datetime="2018-09-29" title="29 сентября 2018 г.">5 минут назад</time>
+            <p class="user-photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите
+              прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <a class="user-photo__like" href="">Нравится: <span>215</span></a>
+          </article>>
+        </div>
+        <div class="user-photo__item">
+          <div class="user-photo__image"> <!--А можно сделать тег <picture>?-->
+            <img class="user-photo__image-mobile" src="http://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+          </div>
+          <article class="user-photo__comment">
+            <a class="user-photo__author" href="">Левон</a>
+            <time class="user-photo__time-counter" datetime="2018-09-29" title="29 сентября 2018 г.">5 часов назад</time>
+            <p class="user-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <a class="user-photo__like" href="">Нравится: <span>356</span></a>
+          </article>
+        </div>
+        <div class="user-photo__item">
+          <div class="user-photo__image">
+            <img class="user-photo__image-mobile" src="http://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+          </div>
+          <article class="user-photo__comment">
+            <a class="user-photo__author" href="">Антон</a>
+            <time class="user-photo__time-counter" datetime="2018-09-29" title="29 сентября 2018 г.">12 часов назад</time>
+            <p class="user-photo__text">Соседи будут рады!</p>
+            <a class="user-photo__like" href="">Нравится: <span>666</span></a>
+          </article>
+        </div>
+        <div class="user-photo__item">
+          <div class="user-photo__image">
+            <img class="user-photo__image-mobile" src="http://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+          </div>
+          <article class="user-photo__comment">
+            <a class="user-photo__author" href="">Борис/a>
+            <time class="user-photo__time-counter" datetime="2018-09-28" title="28 сентября 2018 г.">20 часов назад</time>
+            <p class="user-photo__text">Здесь могла бы быть ваша цитата о высоком и вечном.</p>
+            <a class="user-photo__like" href="">Нравится: <span>215</span></a>
+          </article>
+        </div>
+        <div class="user-photo__item">
+          <div class="user-photo__image">
+            <img class="user-photo__image" src="http://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+          </div>
+          <article class="user-photo__comment">
+            <a class="user-photo__author" href="">Сергей</a>
+            <time class="user-photo__time-counter" datetime="2018-09-28" title="28 сентября 2018 г.">5 часов назад</time>
+            <p class="user-photo__text">Самая кубанская в мире!</p>
+            <a class="user-photo__like" href="">Нравится: <span>4</span></a>
+          </article>
+        </div>
+        <div class="user-photo__item">
+          <div class="user-photo__image">
+            <img class="user-photo__image-mobile" src="http://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+          </div>
+          <article class="user-photo__comment">
+            <a class="user-photo__author" href="">Максим</a>
+            <time class="user-photo__time-counter" datetime="2018-09-27" title="27 сентября 2018 г.">40 часов назад</time>
+            <p class="user-photo__text">Где снег-то?</p>
+            <a class="user-photo__like" href="">Нравится: <span>150</span></a>
+          </article>
+        </div>
+        <div class="user-photo__item">
+          <div class="user-photo__image">
+            <img class="user-photo__image-mobile" src="http://placehold.it/280x180" alt="Фото пользователя" width="280" height="180">
+          </div>
+          <article class="user-photo__comment">
+            <a class="user-photo__author" href="">Надежда</a>
+            <time class="user-photo__time-counter" datetime="2018-09-27" title="27 сентября 2018 г.">45 часов назад</time>
+            <p class="user-photo__text">Всем GM и взаимные лайки!</p>
+            <a class="user-photo__like" href="">Нравится: <span>2560</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="personal-photo">
+      <p class="personal-photo__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <div class="personal-photo__choice">
+        <div class="personal__photo__image">
+          <img class="personal-photo__image-mobile" src="http://placehold.it/280x374" alt="Моё фото">
+        </div>
+        <div class="personal-photo__effect">
+          <label for="clip"><img class="effect-img" src="http://placehold.it/44x44" alt="Обрезка фото">
+            <input class="visually-hidden personal-photo__input" type="radio" name="toggle" id="clip" checked>
+          </label>
+          <label for="fill-color"><img class="effect-img" src="http://placehold.it/44x44" alt="Заливка фото">
+            <input class="visually-hidden personal-photo__input" type="radio" name="effect" id="fill-color">
+          </label>
+          <label for="shadow"><img class="effect-img" src="http://placehold.it/44x44" alt="Обрезка фото">
+            <input class="visually-hidden personal-photo__input" type="radio" name="effect" id="shadow">
+          </label>
+          <input class="personal-photo__range" type="range" min="" max="">
+        </div>
+      </div>
+      <button class="personal-photo__download button button--round" type="button">Запостить</button>
+      <button class="personal-photo__cancel button button--round" type="button">Отмена</button>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo" href="">
+        <img class="page-footer__logo-img" src="http://placehold.it/147x40" alt="Мобильное приложение Pink" width="147" height="40">
+      </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="http://placehold.it/27x34" alt="HTML Academy" width="27" height="34">
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
