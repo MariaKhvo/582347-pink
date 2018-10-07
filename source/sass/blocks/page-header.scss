@@ -1,0 +1,18 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: $grey;
+  color: $white;
+}
+
+.page-title__text {
+  text-align: center;
+  padding: 30px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: lighter;
+}

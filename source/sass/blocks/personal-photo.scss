@@ -1,0 +1,67 @@
+.personal-photo {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-photo__slogan {
+  display: block;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 12px;
+}
+
+.personal-photo__choice {
+  padding-bottom: 35px;
+  background-color: $grey-light;
+}
+
+.personal-photo__image-mobile {
+  width: 280px;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+.personal-photo__effect {
+  display: flex;
+  justify-content: space-around;
+  width: 280px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-bottom: 38px;
+}
+
+.range__list--desabled {
+  display: none;
+}
+
+.range__item {
+  margin-left: 38px;
+  margin-bottom: 34px;
+  width: 240px;
+}
+
+.line {
+  border: 1px solid #dddfe0;
+  margin: 0 auto 30px;
+}
+
+.personal-photo__button {
+  width: 280px;
+  box-sizing: border-box;
+  margin: 6px 20px;
+  padding: 17px;
+  border: 3px solid #dddfe0;
+  font-size: inherit;
+  line-height: 18px;
+  font-weight: bold;
+  color: #dddfe0;
+  background-color: $grey-light;
+}
+
+.personal-photo__button--download {
+  border: 3px solid $pink;
+  color: $pink;
+}
+
+

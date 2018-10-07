@@ -1,60 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
-<body>
-  <header class="page-header">
-    <a class="page-header__logo logo" href="index.html">
-      <img class="logo__img" src="" width="75" height="22" alt="Мобильное приложение Pink">
-    </a>
-    <nav class="main-nav" aria-label="Меню">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__img" src="" width="75" height="22" alt="Мобильное приложение Pink">
+      </a>
+      <nav class="main-nav" aria-label="Меню">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="page-title">
+        <h1 class="page-title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </div>
-    </nav>
-    <div class="page-title">
-      <h1 class="page-title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </div>
-  </header>
-  <main class="page-main">
-    <section class="page-main__form">
-      <p class="page-main__slogan">Поделитесь своей историей и получите шанс выиграть приз - 1000 миль
-        на вашу бонусную карту</p>
-        <form class="competition-form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="competition-form__user">
+    </header>
+    <main class="page-main">
+      <section class="main-form">
+        <p class="main-form__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <span class="main-form__slogan main-form__slogan--desktop">Пожалуйста, заполните форму ниже:</span></p>
+         <form class="competition-form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="competition-form__user form-item">
             <div class="input">
-              <label class="input__label" for="user-surname">Фамилия:</label>
+              <label class="input__label pink-title" for="user-surname">Фамилия:</label>
               <input class="input__control" type="text" id="user-surname" name="surname" placeholder="Укажите фамилию*" value="">
             </div>
             <div class="input">
-              <label class="input__label" for="user-name">Имя:</label>
+              <label class="input__label pink-title" for="user-name">Имя:</label>
               <input class="input__control" type="text" id="user-name" name="name" placeholder="Введите ваше имя*" value="">
             </div>
             <div class="input">
-              <label class="input__label" for="user-patronymic">Отчество:</label>
+              <label class="input__label pink-title" for="user-patronymic">Отчество:</label>
               <input class="input__control" type="text" id="user-patronymic" name="patronymic" placeholder="Ну и отчество тоже" value="">
             </div>
           </fieldset>
-          <fieldset class="competition-form__attainment">
-            <legend class="competition-form__title">Ваши безбашенные достижения в путешествии</legend>
+          <fieldset class="competition-form__attainitem form-item">
+            <legend class="competition-form__title pink-title">Ваши безбашенные достижения в путешествии</legend>
             <div class="checkbox">
               <label class="checkbox__label" for="shark">Сделал селфи с акулой</label>
               <input class="checkbox__control" type="checkbox" name="photo-attainment" id="shark" value="shark" checked>
@@ -80,18 +82,18 @@
               <input class="checkbox__control" type="checkbox" name="photo-attainment" id="hotel" value="chaos">
             </div>
           </fieldset>
-          <fieldset class="competition-form__contacts">
+          <fieldset class="competition-form__contitem form-item">
             <div class="input">
-              <label class="input__label" for="user-phone">Номер телефона</label>
+              <label class="input__label pink-title" for="user-phone">Номер телефона</label>
               <input class="input__control" type="tel" id="user-phone" name="phone" placeholder="Номер, пожалуйста" value="">
             </div>
             <div class="input">
-              <label class="input__label" for="user-mail">Адрес почты</label>
+              <label class="input__label pink-title" for="user-mail">Адрес почты</label>
               <input class="input__control" type="email" id="user-mail" name="mail" placeholder="Введите почту*" value="">
             </div>
           </fieldset>
-          <fieldset class="competition-form__system">
-            <legend class="competition-form__title">С каким приложением путешествовали?</legend>
+          <fieldset class="competition-form__syitem form-item">
+            <legend class="competition-form__title pink-title">С каким приложением путешествовали?</legend>
             <div class="radio">
               <label class="radio__label" for="system-iOS">Pink для iOS</label>
               <input class="radio__control" type="radio" id="system-ios" name="system" value="ios" checked>
@@ -105,59 +107,59 @@
               <input class="radio__control" type="radio" id="system-windows" name="system" value="windows">
             </div>
           </fieldset>
-          <fieldset class="competition-form__emotions">
-            <legend class="competition-form__title">Опишите свои эмоции</legend>
+          <fieldset class="competition-form__emotitem form-item">
+            <legend class="competition-form__title pink-title">Опишите свои эмоции</legend>
             <div class="textarea">
               <label class="textarea__label" for="emotions"></label>
-              <textarea class="textarea__control" name="messege" id="emotions"></textarea>
+              <textarea class="textarea__control" name="messege" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
           <button class="competition-form__button button button--green" type="submit">Отправить форму</button>
           <small class="competition-form__legend competition-form__legend--top">
-            <sup>*</sup> — Обязательные поля
+            <sup class="sup-pink">*</sup> — Обязательные поля
           </small>
         </form>
-    </section>
-  </main>
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-img" src="http://placehold.it/147x40" alt="Мобильное приложение Pink" width="147" height="40">
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter">Twitter</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="http://placehold.it/27x34" alt="HTML Academy" width="27" height="34">
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo" href="index.html">
+          <img class="page-footer__logo-img" src="http://placehold.it/147x40" alt="Мобильное приложение Pink" width="147" height="40">
         </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="Twitter">Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано:</p>
+          <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="http://placehold.it/27x34" alt="HTML Academy" width="27" height="34">
+          </a>
+        </div>
       </div>
-    </div>
-  </footer>
-  <section class="modal modal--sent">
-    <h3 class="modal__title">Ваша заявка отправлена</h3>
-    <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам.
-      В ближайшее время мы рассмотрим ее и оповестим вас.
-    </p>
-    <div class="modal__button button">
-      <button class="button button--green" type="button">Закрыть окно</button>
-    </div>
-  </section>
-  <section class="modal modal--error">
-    <h3 class="modal__title">Что-то пошло не так!</h3>
-    <p class="modal__text">Проверь поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="modal__button button button--green" type="button">Ок</button>
-  </section>
-</body>
+    </footer>
+    <section class="modal modal--sent">
+      <h3 class="modal__title">Ваша заявка отправлена</h3>
+      <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам.
+        В ближайшее время мы рассмотрим ее и оповестим вас.
+      </p>
+      <div class="modal__button button">
+        <button class="button button--green" type="button">Закрыть окно</button>
+      </div>
+    </section>
+    <section class="modal modal--error">
+      <h3 class="modal__title">Что-то пошло не так!</h3>
+      <p class="modal__text">Проверь поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__button button button--green" type="button">Ок</button>
+    </section>
+  </body>
 </html>

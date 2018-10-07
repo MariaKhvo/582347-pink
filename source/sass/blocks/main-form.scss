@@ -1,0 +1,16 @@
+.main-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-form__slogan {
+  display: block;
+  text-align: center;
+  padding: 25px;
+  font-size: inherit;
+  line-height: 30px;
+}
+
+.main-form__slogan--desktop {
+  display: none;
+}

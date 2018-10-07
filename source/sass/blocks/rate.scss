@@ -1,0 +1,36 @@
+.rate {
+  width: 100%;
+  background-color: $grey-light;
+}
+
+.rate-list {
+  overflow: hidden;
+}
+
+.rate__title {
+  width: 280px;
+}
+
+.rate__name {
+  margin: 0;
+  font-size: inherit;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.rate__price {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+.rate__function-program {
+  font-size: inherit;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+

@@ -1,0 +1,27 @@
+.reviews__item {
+  margin: 0 20px;
+}
+
+.reviews__author-name {
+  display: block;
+  text-align: center;
+  padding: 25px 5px;
+  font-size: 18px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.reviews__text {
+  display: block;
+  text-align: center;
+}
+
+.reviews__personal-data {
+  display: none;
+}
+
+.reviews__toggles {
+  display: block;
+  text-align: center;
+}
