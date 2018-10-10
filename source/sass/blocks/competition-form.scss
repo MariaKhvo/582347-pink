@@ -1,65 +1,19 @@
 .competition-form {
-  display: flex;
-  flex-direction: column;
   width: 280px;
   box-sizing: border-box;
   margin: 0 auto;
   border: none;
 }
 
-.form-item {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
+.competition-form__item {
   border: none;
 }
 
-.input {
-  display: flex;
-  flex-direction: column;
-}
-
-.input__label {
-  display: block;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-}
-
-.pink-title {
+.competition-form__title {
   font-size: 18px;
   line-height: 30px;
   font-weight: inherit;
   color: $pink;
-}
-
-.input__control {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 15px 20px;
-  margin-bottom: 15px;
-  border: 2px solid $grey-light;
-  border-radius: 2px;
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.checkbox__label,
-.radio__label {
-  font-size: 18px;
-  line-height: 30px;
-}
-
-.textarea__control {
-  width: 100%;
-  box-sizing: border-box;
-  min-height: 200px;
-  border: 2px solid $grey-light;
-  padding: 10px;
-  margin: 0;
-  font-size: 18px;
-  line-height: 30px;
-  font-family: inherit;
 }
 
 .competition-form__button {
@@ -77,6 +31,6 @@
   margin-bottom: 55px;
 }
 
-.sup-pink {
+.competition-form-sup {
   color: $pink;
 }

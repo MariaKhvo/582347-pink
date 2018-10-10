@@ -1,0 +1,32 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin-top: 66px;
+  list-style: none;
+  background-color: $grey;
+}
+
+.site-list__link {
+  display: block;
+  text-align: center;
+  padding: 18px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white;
+  border-top: 1px solid $border-top;
+  border-bottom: 1px solid $border-bottom;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
+
+  .main-nav--closed .user-list__item {
+    display: none;
+  }
+}

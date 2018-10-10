@@ -2,3 +2,12 @@
   display: flex;
   flex-direction: column;
 }
+
+.page-main__img {
+  margin-top: -66px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: $grey;
+  color: $white;
+}

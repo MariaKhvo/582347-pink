@@ -1,7 +1,7 @@
 .apps-store {
-  margin-top: 255px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   color: $white;
-  background-color: $grey;
 }
 
 .apps-store__button {
@@ -28,9 +28,25 @@
 .apps-store__availability {
   display: block;
   text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
   font-size: 14px;
   line-height: 24px;
   font-weight: lighter;
+}
+
+.app-store__title {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .app-store__title {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto 35px;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 52px;
+    color: $white;
+  }
 }

@@ -1,0 +1,11 @@
+.textarea__control {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 200px;
+  border: 2px solid $grey-light;
+  padding: 10px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: inherit;
+}
