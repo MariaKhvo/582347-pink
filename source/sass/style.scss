@@ -1,6 +1,6 @@
-@import "./global/container.scss";
 @import "./global/variables.scss";
 @import "./global/fonts.scss";
+@import "./global/container.scss";
 @import "./global/global.scss";
 @import "./blocks/page-header.scss";
 @import "./blocks/advantage.scss";
@@ -8,7 +8,9 @@
 @import "./blocks/button.scss";
 @import "./blocks/checkbox.scss";
 @import "./blocks/competition-form.scss";
+@import "./blocks/copyright.scss";
 @import "./blocks/input.scss";
+@import "./blocks/logo.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/main-form.scss";
 @import "./blocks/main-nav.scss";
@@ -17,8 +19,10 @@
 @import "./blocks/page-title.scss";
 @import "./blocks/personal-photo.scss";
 @import "./blocks/radio.scss";
+@import "./blocks/range.scss";
 @import "./blocks/rate.scss";
 @import "./blocks/reviews.scss";
 @import "./blocks/site-list.scss";
+@import "./blocks/social.scss";
 @import "./blocks/textarea.scss";
 @import "./blocks/user-photo.scss";

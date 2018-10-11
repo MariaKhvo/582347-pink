@@ -6,22 +6,6 @@
   margin: 0 auto;
 }
 
-.social__list {
-  list-style: none;
-}
-
-.social__item {
-  display: inline-block;
-}
-
-.copyrigh {
-  display: inline-block;
-  font-size: inherit;
-  line-height: 30px;
-}
-
-@media (min-width: 320px) {
-  .footer-index {
-    display: none;
-  }
+.page-footer--index {
+  display: none;
 }
