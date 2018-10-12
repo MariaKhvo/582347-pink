@@ -1,0 +1,32 @@
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.logo__tablet,
+.logo__desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__tablet {
+    display: block;
+  }
+
+  .logo__mobile,
+  .logo__desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__desktop {
+    display: block;
+  }
+
+  .logo__mobile,
+  .logo__tablet {
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+.advantage__slogan {
+  display: block;
+  text-align: center;
+  padding: 0 20px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: lighter;
+}
+
+.advantage__list {
+  padding-top: 80px;
+  padding-left: 26px;
+  padding-right: 26px;
+  list-style: none;
+  background-color: $grey-light;
+}
+
+.advantage__item {
+  display: block;
+  text-align: center;
+}
+
+.advantage__title {
+  font-size: 18px;
+  line-height: 22px;
+}

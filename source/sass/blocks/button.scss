@@ -1,0 +1,22 @@
+.button {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button--green {
+  padding: 10px;
+  margin: 0;
+  background-color: $green;
+  border: 3px solid $green;
+  border-radius: 2px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.button--round {
+  border-radius: 30px;
+}

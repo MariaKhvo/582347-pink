@@ -1,0 +1,53 @@
+.user-photo {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-photo__slogan {
+  display: block;
+  text-align: center;
+  padding: 40px;
+  font-size: inherit;
+  line-height: 30px;
+}
+
+.user-photo__image--first {
+  width: 100%;
+  margin: 0;
+  background-color: $grey;
+}
+
+.user-photo__item {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.user-photo__comment {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  box-sizing: border-box;
+  padding: 17px;
+  margin: 0 auto 20px;
+  background-color: $grey-light;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.user-photo__wrapper {
+  display: inline-block;
+}
+
+.user-photo__author {
+  font-weight: bold;
+  color: inherit;
+}
+
+.user-photo__time-counter {
+  text-transform: uppercase;
+}
+
+.user-photo__like {
+  text-transform: uppercase;
+  color: $pink;
+}
