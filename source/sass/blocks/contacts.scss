@@ -14,6 +14,24 @@
   font-size: inherit;
   line-height: inherit;
   font-weight: inherit;
+
+  @media (min-width: $tablet-width) {
+    width: 430px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.contacts__list {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 }
 
 .contacts__item {
@@ -23,6 +41,18 @@
   font-size: 24px;
   line-height: 28px;
   font-weight: lighter;
+
+  @media (min-width: $tablet-width) {
+    min-width: 300px;
+    box-sizing: border-box;
+  }
+}
+
+.contacts__item--adress {
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
 }
 
 .contacts__text {

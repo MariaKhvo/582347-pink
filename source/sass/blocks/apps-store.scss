@@ -1,16 +1,39 @@
 .apps-store {
+  position: relative;
   min-height: 207px;
-  text-align: center;
-  margin-top: 392px;
   padding-bottom: 28px;
+  margin-top: 326px;
   color: $white;
   background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 105px;
+    position: relative;
+    bottom: auto;
+    margin: 0 auto;
+    background: 0 0;
+  }
+}
+
+.apps-store__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  min-height: 213px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 240px;
+  }
 }
 
 .apps-store__button {
   display: block;
   text-align: center;
-  margin: 28px 20px 30px;
+  margin: 28px 0 30px;
   padding: 17px 20px;
   border: 3px solid $white;
   font-size: 18px;
@@ -20,6 +43,7 @@
 }
 
 .apps-store__list {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   padding: 0;
@@ -40,7 +64,6 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-
     display: block;
     max-width: 200px;
     margin: 0 auto 35px;

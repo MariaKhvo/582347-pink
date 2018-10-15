@@ -1,11 +1,20 @@
 .input {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 52px
+  }
 }
 
 .input__label {
   display: block;
   margin-bottom: 5px;
+  margin-right: 20px;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
@@ -14,7 +23,6 @@
 }
 
 .input__control {
-  width: 100%;
   box-sizing: border-box;
   padding: 15px 20px;
   margin-bottom: 15px;
@@ -22,4 +30,9 @@
   border-radius: 2px;
   font-size: 18px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
 }

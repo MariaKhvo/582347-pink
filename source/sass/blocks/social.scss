@@ -1,7 +1,10 @@
 .social__list {
-  list-style: none;
+  width: 200px;
+  margin: 0;
+  padding-top: 3px;
 }
 
 .social__item {
   display: inline-block;
+  box-sizing: border-box;
 }
