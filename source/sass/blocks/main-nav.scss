@@ -1,7 +1,7 @@
 .main-nav {
   position: relative;
   min-height: 66px;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -101,7 +101,6 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-
   &::before,
   &::after {
     content: "";
@@ -124,9 +123,8 @@
 }
 
 .main-nav--closed .main-nav__item {
-
   @media (max-width: $tablet-width-only) {
-    display: none
+    display: none;
   }
 }
 
@@ -134,5 +132,5 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 10
+  z-index: 10;
 }
