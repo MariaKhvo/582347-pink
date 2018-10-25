@@ -2,7 +2,7 @@
   position: relative;
   min-height: 207px;
   padding-bottom: 28px;
-  margin-top: 326px;
+  margin-top: 410px;
   color: $white;
   background-color: $grey;
 
@@ -26,14 +26,15 @@
   min-height: 213px;
 
   @media (min-width: $tablet-width) {
-    min-height: 240px;
+    width: 300px;
+    box-sizing: border-box;
   }
 }
 
 .apps-store__button {
   display: block;
   text-align: center;
-  margin: 28px 0 30px;
+  margin: 28px 0 45px;
   padding: 17px 20px;
   border: 3px solid $white;
   font-size: 18px;
@@ -65,11 +66,16 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    max-width: 200px;
-    margin: 0 auto 35px;
+    margin: 0;
+    padding: 0 340px 0 55px;
     font-size: 40px;
     font-weight: 100;
     line-height: 52px;
     color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 650px;
+    padding-bottom: 21px;
   }
 }

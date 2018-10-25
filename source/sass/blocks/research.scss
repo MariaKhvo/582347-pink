@@ -3,8 +3,6 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin-left: 50%;
-    padding-left: 10px;
     padding-top: 90px;
     padding-bottom: 95px;
     text-align: left;
@@ -12,14 +10,21 @@
 }
 
 .research__slogan {
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
+  padding-left: 50%;
+  padding-right: 101px;
   font-size: 30px;
   line-height: 36px;
+}
+
+.research__wrapper {
+  padding-left: 50%;
 }
 
 .research__text {
   width: 310px;
   box-sizing: border-box;
+  margin: 0 0 10px 0;
   padding-right: 13px;
   font-size: 14px;
   line-height: 24px;

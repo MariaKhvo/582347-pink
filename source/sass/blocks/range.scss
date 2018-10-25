@@ -1,5 +1,9 @@
 .range__list--desabled {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .range__item {

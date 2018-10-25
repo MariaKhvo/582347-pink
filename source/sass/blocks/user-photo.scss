@@ -16,20 +16,21 @@
   }
 }
 
-.user-photo__image--todey {
-  width: 100%;
-  margin: 0;
-  background-color: $grey;
-}
-
 .user-photo__item {
   margin: 0 auto;
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    flex-basis: 300px;
+    width: 300px;
+    box-sizing: border-box;
+    margin: 0;
   }
 }
+
+.user-photo__item--today {
+  width: 100%;
+}
+
 
 .user-photo__comment {
   padding: 18px 19px 20px;

@@ -1,7 +1,10 @@
 .main-form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
 }
 
 .main-form__slogan {
