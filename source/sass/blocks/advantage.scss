@@ -54,6 +54,7 @@
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: left bottom;
+    background-color: $grey-light;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,6 +92,7 @@
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 50% 130%;
+  background-color: $grey-light;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 35px;

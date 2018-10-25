@@ -1,0 +1,17 @@
+.photo-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-block__slogan {
+  display: block;
+  text-align: center;
+  padding: 40px 5px;
+  font-size: 14px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    box-sizing: border-box;
+  }
+}

@@ -38,6 +38,7 @@
 
 .personal-photo__right {
   @media (min-width: $tablet-width) {
+    width: 280px;
     flex-direction: column;
   }
 
