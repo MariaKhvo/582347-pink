@@ -1,12 +1,28 @@
 .competition-form {
-  width: 280px;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin: 0 auto;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .competition-form__item {
   border: none;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 20px;
+  }
 }
 
 .competition-form__title {
@@ -16,10 +32,90 @@
   color: $pink;
 }
 
+.competition-form__title--contact {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.competition-form_sup {
+  color: $pink;
+}
+
+.competition-form__user {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    padding-right: 35px;
+    box-sizing: border-box;
+  }
+}
+
+.competition-form__achievements {
+  margin: 5px 0 35px 0;
+  background-color: $grey-light;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    background-color: $white;
+    border: 2px solid $grey-light;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.competition-form__contacts {
+  @media (min-width: $tablet-width) {
+    order: 1;
+    border: 2px solid $grey-light;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.competition-form__system {
+  background-color: $grey-light;
+  margin: 5px 0 35px 0;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+    border: 2px solid $grey-light;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 435px;
+    box-sizing: border-box;
+  }
+}
+
+.competition-form__emotions {
+  @media (min-width: $tablet-width) {
+    order: 3;
+    border: 2px solid #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
 .competition-form__button {
   width: 100%;
   box-sizing: border-box;
-  margin-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .competition-form__legend {
@@ -29,8 +125,20 @@
   line-height: 30px;
   text-transform: uppercase;
   margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    order: 5;
+    margin: 0;
+  }
 }
 
-.competition-form_sup {
-  color: $pink;
+.competition-form__send {
+  order: 10;
+  margin-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

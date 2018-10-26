@@ -1,41 +1,33 @@
 .user-photo {
-  display: flex;
-  flex-direction: column;
-}
-
-.user-photo__slogan {
-  display: block;
-  text-align: center;
-  padding: 40px;
-  font-size: inherit;
-  line-height: 30px;
-}
-
-.user-photo__image--first {
-  width: 100%;
-  margin: 0;
-  background-color: $grey;
-}
-
-.user-photo__item {
-  width: 280px;
   margin: 0 auto;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    box-sizing: border-box;
+    margin: 0;
+  }
 }
+
+.user-photo--today {
+  width: 100%;
+}
+
 
 .user-photo__comment {
-  display: flex;
-  flex-direction: column;
-  width: 280px;
-  box-sizing: border-box;
-  padding: 17px;
-  margin: 0 auto 20px;
-  background-color: $grey-light;
+  padding: 18px 19px 20px;
+  text-align: left;
   font-size: 14px;
   line-height: 24px;
+  background-color: $grey-light;
 }
 
 .user-photo__wrapper {
-  display: inline-block;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .user-photo__author {
@@ -44,6 +36,9 @@
 }
 
 .user-photo__time-counter {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: lighter;
   text-transform: uppercase;
 }
 

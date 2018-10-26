@@ -6,9 +6,15 @@
 .personal-photo__slogan {
   display: block;
   text-align: center;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 12px;
+  margin: 0;
+  padding: 14px 20px;
+  font-size: 14px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+    font-size: 18px;
+  }
 }
 
 .personal-photo__choice {
@@ -16,32 +22,81 @@
   background-color: $grey-light;
 }
 
-.personal-photo__image-mobile {
-  width: 280px;
-  box-sizing: border-box;
-  margin: 20px;
+.personal-photo__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
+
+.personal-photo__right {
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    box-sizing: border-box;
+  }
+}
+
+.personal-photo__image {
+  display: block;
+  padding-top: 20px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    box-sizing: border-box;
+    margin: 0;
+  }
 }
 
 .personal-photo__effect {
   display: flex;
   justify-content: space-around;
-  width: 280px;
   box-sizing: border-box;
   margin: 0 auto;
   padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    width: 30px;
+    margin: 0;
+  }
+}
+
+.personal-photo__button-group {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .personal-photo__button {
-  width: 280px;
+  width: 100%;
   box-sizing: border-box;
-  margin: 6px 20px;
   padding: 17px;
+  margin-bottom: 12px;
   border: 3px solid #dddfe0;
   font-size: inherit;
   line-height: 18px;
   font-weight: bold;
   color: #dddfe0;
   background-color: $grey-light;
+
+  @media (min-width: $desktop-width) {
+    width: 185px;
+    box-sizing: border-box;
+  }
 }
 
 .personal-photo__button--download {

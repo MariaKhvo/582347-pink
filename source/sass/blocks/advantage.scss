@@ -1,23 +1,103 @@
+.advantage {
+  padding-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 67px;
+  }
+}
+
 .advantage__slogan {
   display: block;
   text-align: center;
   padding: 0 20px;
+  margin: 0 0 28px;
   font-size: 24px;
   line-height: 28px;
   font-weight: lighter;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.advantage__slogan--second {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 0 100px 45px;
+    width: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 510px;
+    padding: 0 200px 45px;
+  }
 }
 
 .advantage__list {
   padding-top: 80px;
-  padding-left: 26px;
-  padding-right: 26px;
+  padding-left: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: $grey-light;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: none;
+  }
+}
+
+.advantage__wrapper {
   background-color: $grey-light;
 }
 
 .advantage__item {
   display: block;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50%;
+    padding-top: 10px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 350px 0 0 0;
+    text-align: center;
+  }
+}
+
+.advantage__item--smile {
+  padding-bottom: 315px;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 130%;
+  background-color: $grey-light;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 35px;
+    background-image: none;
+  }
 }
 
 .advantage__title {
