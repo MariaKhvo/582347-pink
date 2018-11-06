@@ -1,17 +1,49 @@
-.reviews__item {
-  margin: 0;
-  padding: 0 20px;
+.reviews {
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 45px;
+  }
+}
+
+.reviews__quotes {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 0 auto;
+    padding-top: 75px;
+    fill: $grey-light;
+  }
+}
+
+.reviews__list {
+  position: relative;
+  margin-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+  }
+}
+
+.reviews__item {
+  display: none;
+  margin: 0;
+  text-align: center;
 }
 
 .reviews__author-name {
   display: block;
   text-align: center;
-  padding: 25px 5px;
+  padding: 25px 5px 3px;
   font-size: 18px;
   line-height: 22px;
   font-style: normal;
@@ -23,10 +55,17 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 4px;
+  }
 }
 
 .reviews__text {
   display: block;
+  margin-bottom: 27px;
   text-align: center;
   font-size: 14px;
   line-height: 30px;
@@ -34,11 +73,13 @@
   @media (min-width: $tablet-width) {
     order: 0;
     margin-bottom: 35px;
+    margin-top: 8px;
     font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 100px;
+    padding: 0 120px;
+    font-size: 19px;
   }
 }
 
@@ -48,11 +89,37 @@
   @media (min-width: $tablet-width) {
     display: block;
     order: 2;
+    margin: 0 0 29px 0;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin: 0;
+    font-size: 18px;
   }
 }
 
-.reviews__toggles {
+.reviews__radio {
+  display: inline-block;
+  padding: 0;
+  margin: 0 8px;
+  width: 6px;
+  height: 6px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  border: none;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__item:nth-child(1) {
   display: block;
-  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -1,26 +1,69 @@
 .user-photo {
   margin: 0 auto;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
     box-sizing: border-box;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 24px;
+    margin-top: 27px;
+    padding-bottom: 0;
+  }
+}
+
+.user-photo__image {
+  display: block;
+  line-height: 0;
 }
 
 .user-photo--today {
+  position: relative;
   width: 100%;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+    line-height: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $pink;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+
+    &::before {
+      top: 57px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    margin-bottom: 23px;
+    margin-top: 0;
+
+    &::before {
+      right: 22px;
+    }
+  }
 }
 
-
-.user-photo__comment {
-  padding: 18px 19px 20px;
-  text-align: left;
-  font-size: 14px;
-  line-height: 24px;
-  background-color: $grey-light;
+.user-photo__image--today {
+  @media (min-width: $tablet-width) {
+    height: 509px;
+  }
 }
+
 
 .user-photo__wrapper {
   @media (min-width: $tablet-width) {
@@ -30,7 +73,39 @@
   }
 }
 
+.user-photo__comment {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 18px 19px 20px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: $grey-light;
+
+  @media (min-width: $tablet-width) {
+    height: 110px;
+    padding: 23px 28px 20px;
+  }
+}
+
+.user-photo__comment--today {
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.user-photo__title {
+  display: flex;
+  justify-content: flex-start;
+  order: 0;
+}
+
 .user-photo__author {
+  padding-right: 5px;
   font-weight: bold;
   color: inherit;
 }
@@ -42,7 +117,56 @@
   text-transform: uppercase;
 }
 
+.user-photo__text {
+  width: 100%;
+  margin: 0 0 8px 0;
+}
+
+.user-photo__text--today {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.user-photo__vanity {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+}
+
+.user-photo__vanity--today {
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-left: auto;
+  }
+}
+
+.user-photo__like-heart {
+  padding-right: 15px;
+  vertical-align: middle;
+  color: $pink;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    padding-right: 0;
+    margin-left: auto;
+  }
+}
+
+.user-photo__like-heart--today {
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 20px;
+    margin-left: 0;
+  }
+}
+
 .user-photo__like {
+  margin-top: auto;
+  font-size: 12px;
   text-transform: uppercase;
   color: $pink;
 }

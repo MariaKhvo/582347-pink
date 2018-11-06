@@ -1,18 +1,84 @@
-.effect-filter {
-  position: relative;
+.effect-filter__button {
+  border: none;
+  background-color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 28px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+    padding-bottom: 3px;
+    margin-left: 22px;
+  }
+}
+
+.effect-filter__svg {
+  fill: #b5b9be;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.effect-filter__svg--contrast {
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .effect-filter__range {
-  position: absolute;
-  width: 240px;
+  position: relative;
+  width: 202px;
   height: 2px;
+  margin: 38px 0 32px 18px;
+  box-sizing: border-box;
   background-color: $grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    right: 33px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid $pink;
+    background-color: $grey-light;
+  }
 
   @media (max-width: $mobile-width-only) {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+    margin: 42px 0 28px 47px;
+  }
+}
+
+.effect-filter__slider {
+  display: flex;
+  flex-direction: column;
+  padding-right: 18px;
 }
 
 .effect-filter__range--active {
-  display: block;
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    width: 240px;
+  }
 }

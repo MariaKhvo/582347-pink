@@ -1,4 +1,36 @@
+.checkbox {
+  margin-bottom: 42px;
+
+  @media (min-width: $desktop-width) {
+    width: 33%;
+    box-sizing: border-box;
+  }
+}
+
 .checkbox__label {
+  display: block;
   font-size: 18px;
   line-height: 30px;
+  text-align: left;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    margin-right: 31px;
+    border: 2px solid $grey-middle;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      margin-right: 20px;
+    }
+  }
+}
+
+.checkbox__control {
+  display: none;
 }
