@@ -1,25 +1,23 @@
 .apps-store {
-  position: absolute;
-  bottom: -270px;
   width: 100%;
-  padding-bottom: 18px;
-  padding-top: 28px;
+  margin-top: 400px;
+  padding-bottom: 15px;
+  padding-top: 25px;
   color: $white;
   background-color: $grey;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     bottom: auto;
     width: 100%;
     padding-top: 68px;
-    padding-bottom: 95px;
+    padding-bottom: 93px;
     margin: 0 auto;
     background: 0 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 93px;
-    padding-bottom: 105px;
+    padding-bottom: 108px;
   }
 }
 
@@ -48,6 +46,16 @@
   line-height: 18px;
   font-weight: bold;
   color: inherit;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $pink;
+  }
+
+  &:active {
+    color: rgba($pink, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 44px;
@@ -99,7 +107,7 @@
     width: 300px;
     box-sizing: border-box;
     margin: 0 0 16px;
-    padding: 20px 55px 10px;
+    padding: 17px 55px 11px;
     font-size: 40px;
     font-weight: 100;
     line-height: 48px;

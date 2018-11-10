@@ -41,20 +41,27 @@
   color: $pink;
 
   @media (min-width: $tablet-width) {
-    padding-top: 3px;
-    padding-left: 5px;
+    padding: 3px 5px 12px 0;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
   }
-}
 
-.competition-form__title--contact {
-  display: none;
+  &--contact {
+    display: none;
 
-  @media (min-width: $tablet-width) {
-    display: block;
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--system {
+    padding-bottom: 18px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 15px;
+    }
   }
 }
 
@@ -91,10 +98,26 @@
   @media (min-width: $tablet-width) {
     background-color: $white;
   }
+
+  &--achievements {
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
+  }
+
+  &--system {
+    @media (min-width: $tablet-width) {
+      order: 0;
+    }
+  }
 }
 
 .competition-form__achievements {
-  padding-bottom: 6px;
+  padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 56px;
@@ -105,16 +128,7 @@
     width: 100%;
     padding-top: 47px;
     padding-right: 0;
-  }
-}
-
-.competition-form__wrapper-color--achievements {
-  @media (min-width: $tablet-width) {
-    order: 2;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
+    margin-bottom: 60px;
   }
 }
 
@@ -132,8 +146,8 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding-top: 32px;
-    margin-bottom: 60px;
+    padding-top: 34px;
+    margin-bottom: 63px;
   }
 }
 
@@ -143,7 +157,7 @@
   background-color: $grey-light;
 
   @media (min-width: $tablet-width) {
-    padding: 13px 58px 11px;
+    padding: 9px 58px 11px;
     margin-bottom: 57px;
     border: 2px solid $grey-light;
     background-color: $white;
@@ -151,31 +165,27 @@
 
   @media (min-width: $desktop-width) {
     width: 435px;
-    padding: 28px 0 15px 75px;
+    padding: 8px 0 15px 75px;
     box-sizing: border-box;
   }
 }
 
-.competition-form__wrapper-color--system {
-  @media (min-width: $tablet-width) {
-    order: 0;
-  }
-}
 
 .competition-form__emotions {
   padding: 0;
 
   @media (min-width: $tablet-width) {
     order: 3;
-    padding: 24px 58px 36px;
-    margin-bottom: 25px;
+    padding: 24px 58px 42px;
+    margin-bottom: 24px;
     border: 2px solid #f2f2f2;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     padding-bottom: 0;
-    margin-bottom: 50px;
+    padding-top: 35px;
+    margin-bottom: 67px;
   }
 }
 

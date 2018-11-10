@@ -17,7 +17,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    padding: 93px 55px 0;
+    padding: 93px 55px 3px;
     margin: 0;
   }
 
@@ -29,19 +29,19 @@
     padding-right: 22px;
     margin-bottom: 70px;
   }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      padding: 0 0 70px 0;
+    }
+  }
 }
 
 .main-form__slogan span {
   @media (min-width: $desktop-width) {
     display: inline;
-  }
-}
-
-.main-form__slogan--desktop {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    padding: 0 0 70px 0;
   }
 }

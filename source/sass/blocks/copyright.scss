@@ -27,4 +27,13 @@
 
 .copyright__link {
   padding-top: 15px;
+  fill: $pink;
+
+  &:hover {
+    fill: $grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

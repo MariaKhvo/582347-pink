@@ -9,6 +9,11 @@
   font-family: inherit;
 
   @media (min-width: $tablet-width) {
-    padding-top: 14px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 130px;
+    margin-bottom: 38px;
   }
 }

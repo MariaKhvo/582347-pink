@@ -1,12 +1,13 @@
 .rate {
   width: 100%;
   background-color: $grey-light;
-  margin-bottom: 22px;
-  padding-bottom: 30px;
+  margin-bottom: 21px;
+  padding-bottom: 25px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 107% auto;
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 5px;
-  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
@@ -17,7 +18,8 @@
 .rate__list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  overflow: hidden;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -27,20 +29,21 @@
 
   @media (min-width: $desktop-width) {
     width: 940px;
-    padding-top: 54px;
-    margin-bottom: 25px;
+    padding-top: 62px;
+    margin-bottom: 50px;
   }
 }
 
 .rate__item {
-  overflow: hidden;
   width: 100%;
   padding-top: 90px;
   margin-bottom: 22px;
+  transform: translateX(-261px);
 
   @media (min-width: $tablet-width) {
     overflow: visible;
-    margin-bottom: 72px;
+    transform: none;
+    margin-bottom: 50px;
     padding-top: 88px;
   }
 }
@@ -49,7 +52,7 @@
   position: relative;
   min-width: 278px;
   box-sizing: border-box;
-  padding-top: 17px;
+  padding-top: 18px;
   padding-bottom: 22px;
   background-color: $grey;
 
@@ -70,51 +73,51 @@
   @media (min-width: $desktop-width) {
     height: 98px;
   }
-}
 
 
-.rate__title--flag {
-  position: relative;
-  background-image: url("../img/bg-hit.svg");
-  background-position: left top;
-  background-repeat: no-repeat;
-
-  &::after {
-    content: "Хит";
-    position: absolute;
-    top: 9px;
-    left: 12px;
-    width: 30px;
-    height: 30px;
-    transform: rotate(-45deg);
-    color: $white;
-    font-size: 14px;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
-
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/bg-hit-tablet.svg");
-
-    &::after {
-      top: 5px;
-      left: 7px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
+  &--flag {
+    position: relative;
     background-image: url("../img/bg-hit.svg");
+    background-position: left top;
+    background-repeat: no-repeat;
 
     &::after {
-      top: 14px;
+      content: "Хит";
+      position: absolute;
+      top: 9px;
       left: 12px;
+      width: 30px;
+      height: 30px;
+      transform: rotate(-45deg);
+      color: $white;
+      font-size: 14px;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/bg-hit-tablet.svg");
+
+      &::after {
+        top: 5px;
+        left: 7px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/bg-hit.svg");
+
+      &::after {
+        top: 14px;
+        left: 12px;
+      }
     }
   }
 }
 
 .rate__function {
   position: relative;
-  padding: 14px 22px;
+  padding: 15px 22px;
   background-color: $white;
   font-size: 14px;
   line-height: 30px;

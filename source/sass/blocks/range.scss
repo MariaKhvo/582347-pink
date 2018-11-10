@@ -1,15 +1,15 @@
+.range__item {
+  margin-left: 38px;
+  margin-bottom: 34px;
+  width: 240px;
+}
+
 .range__list--desabled {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
   }
-}
-
-.range__item {
-  margin-left: 38px;
-  margin-bottom: 34px;
-  width: 240px;
 }
 
 .range__line {

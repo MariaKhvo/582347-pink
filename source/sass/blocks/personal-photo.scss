@@ -146,17 +146,17 @@
     width: 185px;
     box-sizing: border-box;
   }
-}
 
-.personal-photo__button--download {
-  border: 3px solid $pink;
-  color: $pink;
+  &--download {
+    border: 3px solid $pink;
+    color: $pink;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
-  }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 22px;
+    }
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 }

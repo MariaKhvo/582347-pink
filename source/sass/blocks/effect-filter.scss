@@ -17,26 +17,31 @@
 .effect-filter__svg {
   fill: #b5b9be;
 
+  &--active {
+    fill: $pink;
+  }
+
   @media (min-width: $tablet-width) {
     width: 24px;
     height: 24px;
+    fill: $pink;
   }
 
   @media (min-width: $desktop-width) {
     width: 48px;
     height: 48px;
   }
-}
 
-.effect-filter__svg--contrast {
-  @media (min-width: $tablet-width) {
-    width: 20px;
-    height: 20px;
-  }
+  &--contrast {
+    @media (min-width: $tablet-width) {
+      width: 20px;
+      height: 20px;
+    }
 
-  @media (min-width: $desktop-width) {
-    width: 34px;
-    height: 34px;
+    @media (min-width: $desktop-width) {
+      width: 34px;
+      height: 34px;
+    }
   }
 }
 
@@ -68,17 +73,17 @@
     width: 288px;
     margin: 42px 0 28px 47px;
   }
+
+  &--active {
+    @media (max-width: $mobile-width-only) {
+      display: block;
+      width: 240px;
+    }
+  }
 }
 
 .effect-filter__slider {
   display: flex;
   flex-direction: column;
   padding-right: 18px;
-}
-
-.effect-filter__range--active {
-  @media (max-width: $mobile-width-only) {
-    display: block;
-    width: 240px;
-  }
 }
