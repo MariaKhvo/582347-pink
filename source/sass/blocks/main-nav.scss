@@ -1,30 +1,44 @@
 .main-nav {
   min-height: 66px;
-  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     min-height: 110px;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 }
 
 .main-nav__container {
   @media (min-width: $desktop-width) {
     position: relative;
+    display: flex;
     width: 940px;
     margin: 0 auto;
+    padding-top: 25px;
     text-align: center;
   }
 }
 
+.main-nav--closed {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-@media (max-width: $tablet-width-only) {
-  .main-nav--closed .main-nav__item {
+.main-nav--opened {
+  background-color: $grey;
+}
+
+.main-nav--closed .main-nav__item {
+  @media (max-width: $tablet-width-only) {
     display: none;
   }
+}
 
-  .main-nav--nojs .main-nav__toggle {
+.main-nav--nojs .main-nav__toggle {
+  @media (max-width: $tablet-width-only) {
     display: none;
   }
 }
@@ -36,69 +50,104 @@
 }
 
 .main-nav__list {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 66px;
   margin: 0;
+  padding: 0;
   background-color: $grey;
 
+  @media (min-width: $tablet-width) {
+    top: 110px;
+  }
+
   @media (min-width: $desktop-width) {
+    position: static;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     flex-grow: 1;
-    padding-top: 20px;
+    padding-top: 5px;
     background-color: transparent;
   }
 }
 
 .main-nav__item {
-  margin: 0;
+  display: block;
   padding: 0;
   list-style: none;
-}
 
-.main-nav__item--active {
-  padding-top: 66px;
+  &:last-child {
+    margin-right: 0;
+  }
 
   @media (min-width: $desktop-width) {
-    padding-top: 0;
+    margin-right: 50px;
+
+    &--active {
+      border-bottom: 2px solid $white;
+    }
   }
 }
 
 .main-nav__link {
   display: block;
   text-align: center;
-  padding: 18px;
+  padding: 15px 18px 16px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 32px;
   font-weight: bold;
   text-transform: uppercase;
   color: $white;
   border-top: 1px solid $border-top;
   border-bottom: 1px solid $border-bottom;
 
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    color: $pink;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 18px 16px;
+  }
+
   @media (min-width: $desktop-width) {
     border: none;
+    line-height: 18px;
+    font-weight: normal;
+    text-transform: none;
+
+    &:focus {
+      color: $white;
+      opacity: 0.3;
+    }
   }
 }
 
 .main-nav__toggle {
   display: block;
   position: absolute;
-  border: none;
-  outline: none;
   top: 20px;
   right: 20px;
+  width: 50px;
+  height: 30px;
   font-size: 0;
   line-height: 0;
   background-color: transparent;
+  border: none;
+  outline: none;
   z-index: 100;
 
   @media (min-width: $tablet-width) {
-    top: 40px;
+    top: 44px;
+    right: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -106,18 +155,32 @@
   }
 }
 
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 4px;
-  background-color: $white;
-  box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
+.main-nav--closed .main-nav__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 4px;
+    background-color: $white;
+    box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
+  }
+
+  &:hover::before {
+    background-color: $pink;
+    box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
+  width: 30px;
+  height: 25px;
+
   &::before,
   &::after {
     content: "";
@@ -137,17 +200,14 @@
   &::after {
     transform: rotate(-45deg);
   }
-}
 
-.main-nav--closed .main-nav__item {
-  @media (max-width: $tablet-width-only) {
-    display: none;
+  &:hover::before,
+  &:hover::after {
+    background-color: $pink;
   }
-}
 
-.main-nav--opened .main-nav__wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 10;
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
 }

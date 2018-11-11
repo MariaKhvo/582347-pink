@@ -10,22 +10,38 @@
 .main-form__slogan {
   display: block;
   text-align: center;
-  padding: 25px;
+  margin: 14px 0 4px 0;
+  padding: 33px 21px 3px 18px;
   font-size: 14px;
   line-height: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    padding: 80px 50px 0;
+    padding: 93px 55px 3px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 820px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-bottom: 70px;
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      padding: 0 0 70px 0;
+    }
   }
 }
 
-.main-form__slogan--desktop {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    padding: 0 0 70px 0;
+.main-form__slogan span {
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }

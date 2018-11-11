@@ -4,13 +4,21 @@
   font-size: 24px;
   line-height: 28px;
   font-weight: lighter;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+  }
 }
 
 .contacts__title {
   display: block;
   text-align: center;
   margin: 0;
-  padding: 20px;
+  padding: 19px 20px;
   font-size: inherit;
   line-height: inherit;
   font-weight: inherit;
@@ -19,24 +27,38 @@
     width: 430px;
     box-sizing: border-box;
     margin: 0 auto;
+    padding: 20px 20px 25px;
     font-size: 40px;
     line-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 530px;
+    margin-bottom: 12px;
+    font-size: 50px;
+    line-height: 58px;
   }
 }
 
 .contacts__list {
+  margin-bottom: 30px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .contacts__item {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 10px 7px;
   font-size: 24px;
   line-height: 28px;
   font-weight: lighter;
@@ -45,11 +67,30 @@
     min-width: 300px;
     box-sizing: border-box;
   }
-}
 
-.contacts__item--adress {
-  @media (min-width: $tablet-width) {
-    flex-grow: 1;
+  &--phone {
+    @media (min-width: $desktop-width) {
+      order: 0;
+    }
+  }
+
+  &--adress {
+    @media (min-width: $tablet-width) {
+      margin-top: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      order: 1;
+      width: 240px;
+      box-sizing: border-box;
+      margin-top: 0;
+    }
+  }
+
+  &--mail {
+    @media (min-width: $desktop-width) {
+      order: 2;
+    }
   }
 }
 
@@ -59,6 +100,14 @@
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .contacts__info {
@@ -66,4 +115,27 @@
   text-align: center;
   margin: 0;
   color: $pink;
+
+  &:hover,
+  &:focus {
+    color: $grey;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+  }
+
+  &--adress {
+    padding-top: 7px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 180px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
 }

@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 67px;
+    padding-top: 70px;
   }
 }
 
@@ -14,33 +14,37 @@
   display: block;
   text-align: center;
   padding: 0 20px;
-  margin: 0 0 28px;
+  margin: 0 0 33px;
   font-size: 24px;
   line-height: 28px;
   font-weight: lighter;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 0;
+    width: 100%;
     font-size: 40px;
     line-height: 48px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     font-size: 50px;
     line-height: 60px;
   }
-}
 
-.advantage__slogan--second {
-  @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    padding: 0 100px 45px;
-    width: 340px;
-  }
+  &--second {
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+      padding: 0 100px 45px;
+      width: 340px;
+    }
 
-  @media (min-width: $desktop-width) {
-    width: 510px;
-    padding: 0 200px 45px;
+    @media (min-width: $desktop-width) {
+      width: 510px;
+      padding: 0 200px 45px;
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -48,22 +52,33 @@
   padding-top: 80px;
   padding-left: 0;
   list-style: none;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 110%;
 
   @media (min-width: $tablet-width) {
-    padding-top: 100px;
+    padding-top: 66px;
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-color: $grey-light;
+    z-index: 10;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
     background-image: none;
   }
 }
 
 .advantage__wrapper {
+  position: relative;
   background-color: $grey-light;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 125% auto;
 }
 
 .advantage__item {
@@ -71,36 +86,82 @@
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     padding-left: 50%;
     padding-top: 10px;
+    margin-bottom: 10px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     display: inline-block;
-    width: 300px;
+    width: 33%;
     box-sizing: border-box;
-    padding: 350px 0 0 0;
+    padding: 360px 40px 0;
     text-align: center;
   }
-}
 
-.advantage__item--smile {
-  padding-bottom: 315px;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 50% 130%;
-  background-color: $grey-light;
+  &--grey {
+    @media (min-width: $desktop-width) {
+      margin-right: 5px;
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      z-index: 10;
+    }
+  }
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 35px;
-    background-image: none;
+  &--pink {
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      z-index: 10;
+    }
+  }
+
+  &--smile {
+    padding-bottom: 302px;
+    margin-bottom: 17px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 30px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 0;
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: calc(50% + 10px) top;
+      z-index: 10;
+    }
   }
 }
 
 .advantage__title {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 24px;
+  font-weight: bold;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.advantage__description {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 16px;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

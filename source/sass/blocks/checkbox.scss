@@ -1,4 +1,55 @@
+.checkbox {
+  margin-bottom: 43px;
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+    box-sizing: border-box;
+  }
+}
+
 .checkbox__label {
+  display: block;
   font-size: 18px;
   line-height: 30px;
+  text-align: left;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    margin-right: 31px;
+    border: 2px solid $grey-middle;
+    background-color: $white;
+  }
+
+  &:hover::before {
+    border-color: $grey;
+  }
+
+  &:active::before,
+  &:focus::before {
+    border-color: $pink;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      margin-right: 20px;
+    }
+  }
+}
+
+.checkbox__control:checked {
+  + .checkbox__label::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 16px;
+    left: 12px;
+    background-image: url("../img/icon-yes.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+  }
 }

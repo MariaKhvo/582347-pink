@@ -2,21 +2,35 @@
   display: block;
   text-align: center;
   cursor: pointer;
-}
 
-.button--green {
-  padding: 10px;
-  margin: 0;
-  background-color: $green;
-  border: 3px solid $green;
-  border-radius: 2px;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: $white;
-}
+  &--green {
+    padding: 10px;
+    margin: 0;
+    background-color: $green;
+    border: 3px solid $green;
+    border-radius: 2px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white;
 
-.button--round {
-  border-radius: 30px;
+    &:hover {
+      background-color: #1c9b5e;
+      border-color: #1c9b5e;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
+
+    &:disabled {
+      background-color: $grey-middle;
+      border-color: $grey-middle;
+    }
+  }
+
+  &--round {
+    border-radius: 50px;
+  }
 }

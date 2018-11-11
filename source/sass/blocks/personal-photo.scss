@@ -1,25 +1,47 @@
 .personal-photo {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    margin-bottom: 32px;
+  }
 }
 
 .personal-photo__slogan {
   display: block;
   text-align: center;
   margin: 0;
-  padding: 14px 20px;
+  padding: 20px 10px;
   font-size: 14px;
   line-height: 30px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px;
+    width: 457px;
+    margin: 0 auto;
+    padding: 38px 50px 68px;
     font-size: 18px;
   }
 }
 
 .personal-photo__choice {
-  padding-bottom: 35px;
+  padding-bottom: 25px;
   background-color: $grey-light;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 38px;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 34px;
+    padding-bottom: 54px;
+  }
 }
 
 .personal-photo__wrapper {
@@ -34,6 +56,10 @@
     width: 800px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 80px;
+  }
 }
 
 .personal-photo__right {
@@ -45,6 +71,21 @@
   @media (min-width: $desktop-width) {
     width: 410px;
     box-sizing: border-box;
+  }
+}
+
+.personal-photo__filter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+    flex-wrap: nowrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 150px;
   }
 }
 
@@ -63,9 +104,11 @@
 .personal-photo__effect {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
-  padding-bottom: 38px;
+  padding: 0 30px 0 16px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -87,19 +130,33 @@
   padding: 17px;
   margin-bottom: 12px;
   border: 3px solid #dddfe0;
-  font-size: inherit;
+  font-size: 18px;
   line-height: 18px;
   font-weight: bold;
   color: #dddfe0;
   background-color: $grey-light;
 
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+
   @media (min-width: $desktop-width) {
     width: 185px;
     box-sizing: border-box;
   }
-}
 
-.personal-photo__button--download {
-  border: 3px solid $pink;
-  color: $pink;
+  &--download {
+    border: 3px solid $pink;
+    color: $pink;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
+  }
 }

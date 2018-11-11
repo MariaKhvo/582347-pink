@@ -2,10 +2,20 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: block;
-    padding-top: 90px;
-    padding-bottom: 95px;
+    padding-top: 75px;
+    padding-bottom: 66px;
+    margin-left: 20px;
+    margin-bottom: 10px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 123px;
+    padding-left: 0;
+    margin-left: 0;
+    padding-bottom: 112px;
   }
 }
 
@@ -15,10 +25,81 @@
   padding-right: 101px;
   font-size: 30px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 300px;
+    padding-right: 111px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 368px;
+    margin-bottom: 25px;
+    line-height: 30px;
+  }
 }
 
 .research__wrapper {
-  padding-left: 50%;
+  position: relative;
+  padding-left: 300px;
+  font-size: 14px;
+  line-height: 24px;
+  max-width: 620px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -121px;
+    left: -8px;
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 238px 276px;
+  }
+
+  &::after {
+    content: "24";
+    position: absolute;
+    top: -65px;
+    left: 8px;
+    display: block;
+    width: 176px;
+    height: 176px;
+    border-radius: 50%;
+    font-size: 96px;
+    line-height: 168px;
+    font-weight: bold;
+    text-align: center;
+    color: $pink;
+    border: 13px solid $pink;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    padding-left: 370px;
+    font-size: 18px;
+    line-height: 30px;
+
+    &::before {
+      top: -151px;
+      left: 0;
+      width: 298px;
+      height: 345px;
+      background-size: 298px 345px;
+    }
+
+    &::after {
+      top: -82px;
+      left: 22px;
+      width: 221px;
+      height: 221px;
+      border-radius: 50%;
+      font-size: 120px;
+      line-height: 208px;
+      border: 16px solid $pink;
+    }
+  }
 }
 
 .research__text {
@@ -26,13 +107,16 @@
   box-sizing: border-box;
   margin: 0 0 10px 0;
   padding-right: 13px;
-  font-size: 14px;
-  line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    box-sizing: border-box;
+    padding-right: 40px;
+    margin-bottom: 30px;
+  }
 }
 
 .research__link {
-  font-size: 14px;
-  line-height: 24px;
   color: $pink;
   text-decoration: underline;
 }

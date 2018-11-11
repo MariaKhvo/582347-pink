@@ -16,7 +16,14 @@
 }
 
 .competition-form__item {
+  padding: 28px 0 25px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    box-sizing: border-box;
+    padding: 33px 58px 12px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: 0;
@@ -26,17 +33,35 @@
 }
 
 .competition-form__title {
-  font-size: 18px;
-  line-height: 30px;
+  padding: 37px 30px 15px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
   font-weight: inherit;
   color: $pink;
-}
-
-.competition-form__title--contact {
-  display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
+    padding: 3px 5px 12px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+
+  &--contact {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &--system {
+    padding-bottom: 18px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 15px;
+    }
   }
 }
 
@@ -44,77 +69,138 @@
   color: $pink;
 }
 
+.competition-form__list {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
 .competition-form__user {
   @media (min-width: $tablet-width) {
+    padding: 0;
     order: -1;
   }
 
   @media (min-width: $desktop-width) {
     width: 50%;
     padding-right: 35px;
+    padding-top: 15px;
+    margin-right: 35px;
     box-sizing: border-box;
+  }
+}
+
+.competition-form__wrapper-color {
+  background-color: $grey-light;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
+  &--achievements {
+    @media (min-width: $tablet-width) {
+      order: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+    }
+  }
+
+  &--system {
+    @media (min-width: $tablet-width) {
+      order: 0;
+    }
   }
 }
 
 .competition-form__achievements {
-  margin: 5px 0 35px 0;
-  background-color: $grey-light;
+  padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    order: 2;
-    background-color: $white;
+    margin-bottom: 56px;
     border: 2px solid $grey-light;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    padding-top: 47px;
+    padding-right: 0;
+    margin-bottom: 60px;
   }
 }
 
 .competition-form__contacts {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+
   @media (min-width: $tablet-width) {
     order: 1;
+    padding-top: 21px;
+    padding-bottom: 0;
+    margin-bottom: 50px;
     border: 2px solid $grey-light;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    padding-top: 34px;
+    margin-bottom: 63px;
   }
 }
 
 .competition-form__system {
+  padding-top: 0;
+  padding-bottom: 3px;
   background-color: $grey-light;
-  margin: 5px 0 35px 0;
 
   @media (min-width: $tablet-width) {
-    order: 0;
+    padding: 9px 58px 11px;
+    margin-bottom: 57px;
     border: 2px solid $grey-light;
     background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 435px;
+    width: 435px;
+    padding: 8px 0 15px 75px;
     box-sizing: border-box;
   }
 }
 
+
 .competition-form__emotions {
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     order: 3;
+    padding: 24px 58px 42px;
+    margin-bottom: 24px;
     border: 2px solid #f2f2f2;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    padding-bottom: 0;
+    padding-top: 35px;
+    margin-bottom: 67px;
   }
 }
 
 .competition-form__button {
   width: 100%;
   box-sizing: border-box;
+  padding: 13px 10px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -124,21 +210,28 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 55px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     order: 5;
     margin: 0;
+    padding-top: 12px;
   }
 }
 
 .competition-form__send {
   order: 10;
-  margin-top: 50px;
+  margin-top: 46px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }

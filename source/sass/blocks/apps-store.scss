@@ -1,19 +1,23 @@
 .apps-store {
-  position: relative;
-  min-height: 207px;
-  padding-bottom: 28px;
-  margin-top: 410px;
+  width: 100%;
+  margin-top: 400px;
+  padding-bottom: 15px;
+  padding-top: 25px;
   color: $white;
   background-color: $grey;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
-    padding-top: 90px;
-    padding-bottom: 105px;
-    position: relative;
     bottom: auto;
+    width: 100%;
+    padding-top: 68px;
+    padding-bottom: 93px;
     margin: 0 auto;
     background: 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 93px;
+    padding-bottom: 108px;
   }
 }
 
@@ -34,21 +38,45 @@
 .apps-store__button {
   display: block;
   text-align: center;
-  margin: 28px 0 45px;
+  width: 100%;
+  margin: 0 0 30px;
   padding: 17px 20px;
   border: 3px solid $white;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
   color: inherit;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $pink;
+  }
+
+  &:active {
+    color: rgba($pink, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+    font-size: 21px;
+  }
 }
 
 .apps-store__list {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
   padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.apps-store__item {
+  display: inline-block;
+  margin: 0 16px;
 }
 
 .apps-store__availability {
@@ -58,6 +86,17 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: lighter;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 0;
+    margin-top: 32px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+  }
 }
 
 .app-store__title {
@@ -65,16 +104,20 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin: 0;
-    padding: 0 340px 0 55px;
+    width: 300px;
+    box-sizing: border-box;
+    margin: 0 0 16px;
+    padding: 17px 55px 11px;
     font-size: 40px;
     font-weight: 100;
-    line-height: 52px;
+    line-height: 48px;
     color: $white;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 650px;
-    padding-bottom: 21px;
+    padding: 15px 10px 21px;
+    margin-bottom: 28px;
+    font-size: 50px;
+    line-height: 60px;
   }
 }
