@@ -42,6 +42,7 @@
   display: none;
 
   &:checked + .radio__label::after {
+    content: "";
     position: absolute;
     top: 12px;
     left: 12px;

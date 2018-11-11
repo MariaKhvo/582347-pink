@@ -1,13 +1,16 @@
 .rate {
   width: 100%;
   background-color: $grey-light;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
   padding-bottom: 25px;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: 107% auto;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 22px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 20px;
@@ -43,8 +46,8 @@
   @media (min-width: $tablet-width) {
     overflow: visible;
     transform: none;
-    margin-bottom: 50px;
-    padding-top: 88px;
+    margin-bottom: 54px;
+    padding-top: 91px;
   }
 }
 

@@ -32,6 +32,11 @@
     border: 10px solid $white;
   }
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: cover;
+  }
+
   @media (min-width: $tablet-width) {
     height: 374px;
     background-image: url("../img/bg-map-tablet@1x.jpg");
@@ -46,6 +51,11 @@
     &::after {
       top: 193px;
       right: 47%;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: cover;
     }
   }
 
@@ -62,6 +72,11 @@
     &::after {
       top: 262px;
       right: 48%;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: cover;
     }
   }
 }
