@@ -62,8 +62,8 @@
           <button class="main-nav__toggle" type="button">Меню</button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link" href="">Главная</a>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active" href="">Главная</a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="photo.html">Фотографии</a>
@@ -170,7 +170,7 @@
           <blockquote class="reviews__item">
             <cite class="reviews__author-name">Николай Петров</cite>
             <p class="reviews__personal-data">25 лет, водитель трамвая</p>
-            <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть
+            <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть
               на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
               фотографии!&raquo;</p>
           </blockquote>
@@ -378,22 +378,7 @@
           </svg>
         </a>
       </div>
-    </footer>>
-    <script>
-      var navMain = document.querySelector(".main-nav");
-      var navToggle = document.querySelector(".main-nav__toggle");
-
-      navMain.classList.remove("main-nav--nojs");
-
-      navToggle.addEventListener("click", function() {
-        if (navMain.classList.contains("main-nav--closed")) {
-          navMain.classList.remove("main-nav--closed");
-          navMain.classList.add("main-nav--opened");
-        } else {
-          navMain.classList.add("main-nav--closed");
-          navMain.classList.remove("main-nav--opened");
-        }
-      });
-    </script>
+    </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>

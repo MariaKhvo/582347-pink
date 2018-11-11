@@ -1,6 +1,6 @@
 .page-header {
   position: relative;
-  padding-bottom: 6px;
+  padding-bottom: 8px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -13,6 +13,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 5px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
