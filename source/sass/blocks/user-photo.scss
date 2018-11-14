@@ -35,8 +35,8 @@
   line-height: 0;
 
   &--today {
-    display: block;
     position: relative;
+    display: block;
 
     &::before {
       content: "Панорама дня";
@@ -70,6 +70,9 @@
   }
 }
 
+.user-photo__image-mobile {
+  width: 100%;
+}
 
 .user-photo__wrapper {
   @media (min-width: $tablet-width) {

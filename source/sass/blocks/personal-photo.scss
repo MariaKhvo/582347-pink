@@ -3,7 +3,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    padding-top: 6px;
+    padding-top: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -114,14 +114,19 @@
     flex-direction: column;
     width: 30px;
     margin: 0;
+    padding-right: 25px;
   }
 }
 
 .personal-photo__button-group {
+  @media (min-width: $tablet-width) {
+    margin-left: 5px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin-left: 5px;
+    margin-left: 0;
   }
 }
 
@@ -130,12 +135,23 @@
   box-sizing: border-box;
   padding: 17px;
   margin-bottom: 12px;
-  border: 3px solid #dddfe0;
+  border: 3px solid rgba($border-top, 0.1);
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
-  color: #dddfe0;
+  color: rgba($border-top, 0.1);
   background-color: $grey-light;
+
+  &:hover {
+    border: 3px solid rgba($border-top, 0.3);
+    color: rgba($border-top, 0.3);
+  }
+
+  &:active {
+    color: rgba($border-top, 0.1);
+    background-color: #b5b9be;
+    border: 3px solid #b5b9be;
+  }
 
   @media (min-width: $tablet-width) {
     width: 260px;
@@ -151,6 +167,16 @@
   &--download {
     border: 3px solid $pink;
     color: $pink;
+
+    &:hover {
+      background-color: $pink;
+      border: 3px solid $pink;
+      color: $white;
+    }
+
+    &:active {
+      color: rgba($white, 0.3);
+    }
 
     @media (min-width: $tablet-width) {
       margin-bottom: 22px;
