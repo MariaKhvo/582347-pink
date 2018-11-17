@@ -35,37 +35,43 @@
   line-height: 0;
 
   &--today {
-    position: relative;
     display: block;
-
-    &::before {
-      content: "Панорама дня";
-      position: absolute;
-      top: 0;
-      right: 20px;
-      width: 140px;
-      height: 36px;
-      font-size: 12px;
-      line-height: 36px;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: $white;
-      background-color: $pink;
-    }
 
     @media (min-width: $tablet-width) {
       height: 509px;
-
-      &::before {
-        top: 57px;
-      }
     }
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      &::before {
-        top: 56px;
-        right: 2px;
-      }
+.user-photo__inscription {
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+    line-height: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $pink;
+  }
+
+  @media (min-width: $tablet-width) {
+
+    &::before {
+      top: 57px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 56px;
+      right: 2px;
     }
   }
 }

@@ -17,7 +17,8 @@
     height: 40px;
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
-    background-position: center -25px;
+    background-position: center top;
+    background-size: 100%
   }
 
   &::after {
@@ -44,8 +45,7 @@
     background-size: 100%;
 
     &::before {
-      height: 79px;
-      background-size: 660px 118px;
+      height: 90px;
     }
 
     &::after {
@@ -65,8 +65,7 @@
     background-position: center calc(50% - 40px);
 
     &::before {
-      height: 118px;
-      background-size: 1200px 165px;
+      height: 200px;
     }
 
     &::after {
