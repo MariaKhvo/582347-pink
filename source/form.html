@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.js"></script>
   </head>
-  </head>
   <body>
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
@@ -16,7 +15,7 @@
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs" aria-label="Меню">
         <div class="main-nav__container">
-          <a class="main-nav__logo logo" href="index.html">
+          <a class="main-nav__logo logo logo--header" href="index.html">
             <svg class="logo__mobile" width="75px" height="22px">
               <use xlink:href="#logo-pink-white-mobile"></use>
             </svg>
@@ -52,6 +51,7 @@
     </header>
     <main class="page-main">
       <section class="main-form container">
+        <h3 class="visually-hidden">Форма конкурса</h3>
         <p class="main-form__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           <span class="main-form__slogan main-form__slogan--desktop">Пожалуйста, заполните форму ниже:</span>
         </p>
@@ -148,7 +148,7 @@
       </section>
     </main>
     <footer class="page-footer container">
-      <a class="page-footer__logo" href="">
+      <a class="page-footer__logo" href="#">
         <svg class="logo__mobile logo__footer" width="146.3px" height="40.375px">
           <use xlink:href="#logo-pink-blue-mobile"></use>
         </svg>
@@ -167,7 +167,7 @@
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <svg width="26.943px" height="34.09px">
             <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>

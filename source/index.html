@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/picturefill.js"></script>
   </head>
-  </head>
   <body>
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
@@ -16,7 +15,7 @@
     <header class="page-header page-header--main">
       <nav class="main-nav main-nav--closed main-nav--nojs" aria-label="Меню">
         <div class="main-nav__container">
-          <a class="main-nav__logo logo" href="index.html">
+          <a class="main-nav__logo logo logo--header" href="index.html">
             <svg class="logo__mobile" width="75px" height="22px">
               <use xlink:href="#logo-pink-white-mobile"></use>
             </svg>
@@ -49,7 +48,7 @@
       <div class="page-header__wrapper">
         <section class="apps-store">
           <div class="container">
-            <h1 class="app-store__title">Взгляните на жизнь иначе!</h1>
+            <h1 class="apps-store__title">Взгляните на жизнь иначе!</h1>
             <div class="apps-store__wrapper">
               <a class="apps-store__button button button--round" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
               <ul class="apps-store__list">
@@ -154,20 +153,20 @@
         </div>
       </section>
       <section class="rate">
-        <h2 class="visually-hidden"></h2>
+        <h2 class="visually-hidden">Тарифы</h2>
         <div class="rate__wrapper">
           <div class="rate__control">
             <div class="rate__button">
               <input class="rate__input visually-hidden" type="radio" name="toggle" id="button-base">
-              <label class="rate__label slider__label" for="button-base"></label>
+              <label class="rate__label" for="button-base"></label>
             </div>
             <div class="rate__button">
               <input class="rate__input visually-hidden" type="radio" name="toggle" id="button-standard" checked="">
-              <label class="rate__label slider__label" for="button-standard"></label>
+              <label class="rate__label" for="button-standard"></label>
             </div>
             <div>
               <input class="input__rate visually-hidden" type="radio" name="toggle" id="button-unlimited">
-              <label class="rate__label slider__label" for="button-unlimited"></label>
+              <label class="rate__label" for="button-unlimited"></label>
             </div>
           </div>
           <div class="rate__list">
@@ -270,7 +269,7 @@
       <div class="map">Карта</div>
     </main>
     <footer class="page-footer page-footer--main container">
-      <a class="page-footer__logo" href="">
+      <a class="page-footer__logo" href="#">
         <svg class="logo__mobile logo__footer" width="146.3px" height="40.375px">
           <use xlink:href="#logo-pink-blue-mobile"></use>
         </svg>
@@ -289,7 +288,7 @@
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg version="1.0" id="Layer_1" width="26.943px" height="34.09px">
+          <svg width="26.943px" height="34.09px">
             <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>

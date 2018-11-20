@@ -16,7 +16,7 @@
     <header class="page-header">
       <nav class="main-nav main-nav--closed main-nav--nojs" aria-label="Меню">
         <div class="main-nav__container">
-          <a class="main-nav__logo logo" href="index.html">
+          <a class="main-nav__logo logo logo--header" href="index.html">
             <svg class="logo__mobile" width="75px" height="22px">
               <use xlink:href="#logo-pink-white-mobile"></use>
             </svg>
@@ -52,9 +52,11 @@
     </header>
     <main class="page-main">
       <section class="photo-block">
+        <h3 class="visually-hidden">Галерея пользователей</h3>
         <p class="photo-block__slogan container">Взгляните на фотографии, которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не хватает ваших?</p>
         <div class="photo-block__list">
           <article class="user-photo user-photo--today">
+            <h3 class="visually-hidden">Фотогалерея</h3>
             <div class="user-photo__inscription container"></div>
             <picture class="user-photo__image user-photo__image--today">
               <source type="image/webp" media="(min-width: 960px)" srcset="./img/panorama-desktop@1x.webp, ./img/panorama-desktop@2x.webp 2x">
@@ -79,8 +81,9 @@
               </div>
             </div>
           </article>
-          <div class="user-photo__wrapper container">
+          <div class="photo-block__wrapper container">
             <article class="user-photo">
+              <h3 class="visually-hidden">Фотогалерея</h3>
               <picture class="user-photo__image">
                 <source type="image/webp" media="(min-width: 960px)" srcset="./img/photo-car-desktop@1x.webp, ./img/photo-car-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-car-tablet@1x.webp, ./img/photo-car-tablet@2x.webp 2x">
@@ -102,6 +105,7 @@
               </div>
             </article>
             <article class="user-photo">
+              <h3 class="visually-hidden">Фотогалерея</h3>
               <picture class="user-photo__image">
                 <source type="image/webp" media="(min-width: 960px)" srcset="./img/photo-drumset-desktop@1x.webp, ./img/photo-drumset-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-drumset-tablet@1x.webp, ./img/photo-drumset-tablet@2x.webp 2x">
@@ -123,6 +127,7 @@
               </div>
             </article>
             <article class="user-photo">
+              <h3 class="visually-hidden">Фотогалерея</h3>
               <picture class="user-photo__image">
                 <source type="image/webp" media="(min-width: 960px)" srcset="./img/photo-window-desktop@1x.webp, ./img/photo-window-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-window-tablet@1x.webp, ./img/photo-window-tablet@2x.webp 2x">
@@ -144,6 +149,7 @@
                 </div>
             </article>
             <article class="user-photo">
+              <h3 class="visually-hidden">Фотогалерея</h3>
               <picture class="user-photo__image">
                 <source type="image/webp" media="(min-width: 960px)" srcset="./img/photo-fair-desktop@1x.webp, ./img/photo-fair-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-fair-tablet@1x.webp, ./img/photo-fair-tablet@2x.webp 2x">
@@ -165,6 +171,7 @@
               </div>
             </article>
             <article class="user-photo">
+              <h3 class="visually-hidden">Фотогалерея</h3>
               <picture class="user-photo__image">
                 <source type="image/webp" media="(min-width: 960px)" srcset="./img/photo-drumset-desktop@1x.webp, ./img/photo-drumset-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-drumset-tablet@1x.webp, ./img/photo-drumset-tablet@2x.webp 2x">
@@ -186,6 +193,7 @@
               </div>
             </article>
             <article class="user-photo">
+              <h3 class="visually-hidden">Фотогалерея</h3>
               <picture class="user-photo__image">
                 <source type="image/webp" media="(min-width: 960px)" srcset="./img/photo-wing-desktop@1x.webp, ./img/photo-wing-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 660px)" srcset="./img/photo-wing-tablet@1x.webp, ./img/photo-wing-tablet@2x.webp 2x">
@@ -210,6 +218,7 @@
         </div>
       </section>
       <section class="personal-photo">
+        <h3 class="visually-hidden">Личная галерея</h3>
         <div class="container">
           <p class="personal-photo__slogan">Затмите их всех! Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось&nbsp;в телефоне!</p>
         </div>
@@ -249,7 +258,7 @@
                       </button>
                     </div>
                   </div>
-                  <div class="effect-filter__slider">
+                  <div class="personal-photo__slider">
                     <div class="effect-filter__range effect-filter__range--active">
                     </div>
                     <div class="effect-filter__range">
@@ -270,7 +279,7 @@
       </section>
     </main>
     <footer class="page-footer container">
-      <a class="page-footer__logo" href="">
+      <a class="page-footer__logo logo" href="#">
         <svg class="logo__mobile logo__footer" width="146.3px" height="40.375px">
           <use xlink:href="#logo-pink-blue-mobile"></use>
         </svg>
@@ -289,7 +298,7 @@
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+          <svg width="26.943px" height="34.09px">
             <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>

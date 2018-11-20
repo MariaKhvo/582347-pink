@@ -79,14 +79,6 @@
   width: 100%;
 }
 
-.user-photo__wrapper {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-
 .user-photo__comment {
   display: flex;
   flex-direction: column;

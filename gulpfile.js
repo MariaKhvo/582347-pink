@@ -88,7 +88,7 @@ gulp.task("server", function () {
     cors: true,
     ui: false
   });
-  gulp.watch("source/sass/**/*.sass", gulp.series("css"));
+  gulp.watch("source/sass/**/*.sass", gulp.series("css", "refresh"));
   gulp.watch("source/img/**/*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
