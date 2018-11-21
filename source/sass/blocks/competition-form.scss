@@ -16,7 +16,7 @@
 }
 
 .competition-form__item {
-  padding: 28px 0 25px;
+  padding: 28px 0 20px;
   border: none;
 
   @media (min-width: $tablet-width) {
@@ -57,10 +57,14 @@
   }
 
   &--system {
-    padding-bottom: 18px;
+    padding-bottom: 15px;
 
     @media (min-width: $tablet-width) {
       padding-bottom: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 0;
     }
   }
 }
@@ -128,7 +132,7 @@
     width: 100%;
     padding-top: 47px;
     padding-right: 0;
-    margin-bottom: 60px;
+    margin-bottom: 63px;
   }
 }
 
@@ -138,9 +142,9 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
-    padding-top: 21px;
+    padding-top: 26px;
     padding-bottom: 0;
-    margin-bottom: 53px;
+    margin-bottom: 50px;
     border: 2px solid $grey-light;
   }
 
@@ -166,7 +170,7 @@
 
   @media (min-width: $desktop-width) {
     width: 435px;
-    padding: 8px 0 15px 75px;
+    padding: 25px 0 15px 75px;
     box-sizing: border-box;
   }
 }

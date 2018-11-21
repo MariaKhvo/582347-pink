@@ -81,9 +81,9 @@ input[type="radio"].visually-hidden {
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2550px 912px; } }
   .page-header--main {
-    padding-bottom: 2px;
+    padding-bottom: 6px;
     background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-    background-position: 0 calc(50% - 45px), center top;
+    background-position: 0 calc(50% - 50px), center top;
     background-repeat: no-repeat;
     background-size: auto;
     background-color: #283645; }
@@ -149,7 +149,7 @@ input[type="radio"].visually-hidden {
     width: 820px; } }
 
 .advantage {
-  padding-top: 40px; }
+  padding-top: 38px; }
   @media (min-width: 660px) {
     .advantage {
       padding-top: 49px;
@@ -190,7 +190,7 @@ input[type="radio"].visually-hidden {
       margin-bottom: 25px; } }
 
 .advantage__list {
-  padding-top: 80px;
+  padding-top: 82px;
   padding-left: 0;
   list-style: none;
   background-image: url("../img/iphone-screen-mobile@1x.png");
@@ -314,8 +314,8 @@ input[type="radio"].visually-hidden {
 .apps-store {
   width: 100%;
   margin-top: 400px;
-  padding-bottom: 17px;
-  padding-top: 25px;
+  padding-bottom: 11px;
+  padding-top: 23px;
   color: #ffffff;
   background-color: #283645; }
   @media (min-width: 660px) {
@@ -544,7 +544,7 @@ input[type="radio"].visually-hidden {
       width: 940px; } }
 
 .competition-form__item {
-  padding: 28px 0 25px;
+  padding: 28px 0 20px;
   border: none; }
   @media (min-width: 660px) {
     .competition-form__item {
@@ -578,10 +578,13 @@ input[type="radio"].visually-hidden {
       .competition-form__title--contact {
         display: block; } }
   .competition-form__title--system {
-    padding-bottom: 18px; }
+    padding-bottom: 15px; }
     @media (min-width: 660px) {
       .competition-form__title--system {
         padding-bottom: 15px; } }
+    @media (min-width: 960px) {
+      .competition-form__title--system {
+        padding-bottom: 0; } }
 
 .competition-form_sup {
   color: #d22856; }
@@ -643,7 +646,7 @@ input[type="radio"].visually-hidden {
       width: 100%;
       padding-top: 47px;
       padding-right: 0;
-      margin-bottom: 60px; } }
+      margin-bottom: 63px; } }
 
 .competition-form__contacts {
   padding-bottom: 10px;
@@ -653,9 +656,9 @@ input[type="radio"].visually-hidden {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1;
-      padding-top: 21px;
+      padding-top: 26px;
       padding-bottom: 0;
-      margin-bottom: 53px;
+      margin-bottom: 50px;
       border: 2px solid #f2f2f2; } }
   @media (min-width: 960px) {
     .competition-form__contacts {
@@ -677,7 +680,7 @@ input[type="radio"].visually-hidden {
   @media (min-width: 960px) {
     .competition-form__system {
       width: 435px;
-      padding: 8px 0 15px 75px;
+      padding: 25px 0 15px 75px;
       -webkit-box-sizing: border-box;
               box-sizing: border-box; } }
 
@@ -887,7 +890,7 @@ input[type="radio"].visually-hidden {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-bottom: 52px; } }
+      margin-bottom: 50px; } }
 
 @media (min-width: 660px) {
   .input__contacts {
@@ -1397,7 +1400,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     display: block;
     width: 100%;
-    height: 40px;
+    height: 100%;
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -1420,7 +1423,7 @@ input[type="radio"].visually-hidden {
     .map {
       height: 374px;
       background-image: url("../img/bg-map-tablet@1x.jpg");
-      background-position: center calc(50% - 110px);
+      background-position: center calc(50% - 100px);
       background-size: 100%; }
       .map::before {
         height: 90px; }
@@ -1433,13 +1436,14 @@ input[type="radio"].visually-hidden {
       background-size: cover; } }
   @media (min-width: 960px) {
     .map {
-      height: 500px;
+      height: 505px;
       background-image: url("../img/bg-map-desktop@1x.jpg");
       background-position: center calc(50% - 40px); }
       .map::before {
-        height: 200px; }
+        height: 200px;
+        background-size: 1215px 107px; }
       .map::after {
-        top: 262px;
+        top: 266px;
         right: 48%; } }
   @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
     .map {
@@ -1543,7 +1547,7 @@ input[type="radio"].visually-hidden {
       padding-bottom: 37px; } }
   @media (min-width: 960px) {
     .page-footer {
-      padding-top: 74px; } }
+      padding-top: 71px; } }
   .page-footer--main {
     display: none; }
     @media (min-width: 660px) {
@@ -2040,6 +2044,9 @@ input[type="radio"].visually-hidden {
   @media (min-width: 660px) {
     .rate__name {
       font-size: 16px; } }
+  @media (min-width: 960px) {
+    .rate__name {
+      font-size: 18px; } }
 
 .rate__price {
   margin: 0;
@@ -2340,7 +2347,7 @@ input[type="radio"].visually-hidden {
     .social {
       margin-right: 0;
       margin-left: 0;
-      padding: 3px 0 0 20px; } }
+      padding: 3px 0 0 12px; } }
 
 .social__list {
   display: -webkit-box;

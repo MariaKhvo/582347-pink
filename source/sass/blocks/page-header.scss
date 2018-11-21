@@ -33,9 +33,9 @@
   }
 
   &--main {
-    padding-bottom: 2px;
+    padding-bottom: 6px;
     background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-    background-position: 0 calc(50% - 45px), center top;
+    background-position: 0 calc(50% - 50px), center top;
     background-repeat: no-repeat;
     background-size: auto;
     background-color: $main-color;
