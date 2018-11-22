@@ -22,3 +22,11 @@
     padding-bottom: 85px;
   }
 }
+
+.photo-block__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

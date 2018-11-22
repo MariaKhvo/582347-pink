@@ -9,46 +9,23 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     margin-top: 27px;
     padding-bottom: 0;
   }
 
   &--today {
-    position: relative;
+    display: block;
     width: 100%;
-
-    &::before {
-      content: "Панорама дня";
-      position: absolute;
-      top: 0;
-      right: 20px;
-      width: 140px;
-      height: 36px;
-      font-size: 12px;
-      line-height: 36px;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: $white;
-      background-color: $pink;
-    }
 
     @media (min-width: $tablet-width) {
       margin-bottom: 27px;
-
-      &::before {
-        top: 57px;
-      }
     }
 
     @media (min-width: $desktop-width) {
       padding-bottom: 0;
-      margin-bottom: 23px;
+      margin-bottom: 19px;
       margin-top: 0;
-
-      &::before {
-        right: 22px;
-      }
     }
   }
 }
@@ -58,19 +35,48 @@
   line-height: 0;
 
   &--today {
+    display: block;
+
     @media (min-width: $tablet-width) {
       height: 509px;
     }
   }
 }
 
+.user-photo__inscription {
+  position: relative;
 
-.user-photo__wrapper {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+    line-height: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $pink;
   }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 57px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 56px;
+      right: 2px;
+    }
+  }
+}
+
+.user-photo__image-mobile {
+  width: 100%;
 }
 
 .user-photo__comment {

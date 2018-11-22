@@ -10,7 +10,7 @@
   @media (min-width: $desktop-width) {
     padding-top: 20px;
     padding-bottom: 3px;
-    margin-left: 22px;
+    margin-left: 15px;
   }
 }
 
@@ -19,6 +19,10 @@
 
   &--active {
     fill: $pink;
+  }
+
+  &:hover {
+    fill: #8d949b;
   }
 
   @media (min-width: $tablet-width) {
@@ -65,13 +69,43 @@
     background-color: $grey-light;
   }
 
+  &:active::before {
+    background-color: $pink;
+  }
+
   @media (max-width: $mobile-width-only) {
     display: none;
   }
 
+  @media (min-width: $tablet-width) {
+    &:nth-child(1)::before {
+      right: 43px;
+    }
+
+    &:nth-child(2)::before {
+      right: 163px;
+    }
+
+    &:nth-child(3)::before {
+      right: 93px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     width: 288px;
-    margin: 42px 0 28px 47px;
+    margin: 42px 0 26px 47px;
+
+    &:nth-child(1)::before {
+      right: 200px;
+    }
+
+    &:nth-child(2)::before {
+      right: 26px;
+    }
+
+    &:nth-child(3)::before {
+      right: 112px;
+    }
   }
 
   &--active {
@@ -80,10 +114,4 @@
       width: 240px;
     }
   }
-}
-
-.effect-filter__slider {
-  display: flex;
-  flex-direction: column;
-  padding-right: 18px;
 }

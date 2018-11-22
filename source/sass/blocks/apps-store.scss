@@ -1,8 +1,8 @@
 .apps-store {
   width: 100%;
   margin-top: 400px;
-  padding-bottom: 15px;
-  padding-top: 25px;
+  padding-bottom: 11px;
+  padding-top: 23px;
   color: $white;
   background-color: $grey;
 
@@ -17,7 +17,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 93px;
-    padding-bottom: 108px;
+    padding-bottom: 104px;
   }
 }
 
@@ -83,6 +83,7 @@
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
+  padding-top: 2px;
   font-size: 14px;
   line-height: 24px;
   font-weight: lighter;
@@ -99,7 +100,7 @@
   }
 }
 
-.app-store__title {
+.apps-store__title {
   display: none;
 
   @media (min-width: $tablet-width) {
