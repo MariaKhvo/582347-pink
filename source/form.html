@@ -20,7 +20,7 @@
               <use xlink:href="#logo-pink-white-mobile"></use>
             </svg>
             <svg class="logo__tablet" width="146.3px" height="40.375px">
-              <use xlink:href="#logo-pink-blue-mobile"></use>
+              <use xlink:href="#logo-pink-white-tablet"></use>
             </svg>
             <svg class="logo__desktop" width="146.3px" height="40.375px">
               <use xlink:href="#logo-pink-white-desktop"></use>
@@ -59,11 +59,11 @@
           <fieldset class="competition-form__user competition-form__item container">
             <div class="input">
               <label class="input__label" for="user-surname">Фамилия:</label>
-              <input class="input__control checked" type="text" id="user-surname" name="surname" placeholder="Укажите фамилию*" value="">
+              <input class="input__control checked" type="text" id="user-surname" name="surname" placeholder="Укажите фамилию *" value="">
             </div>
             <div class="input">
               <label class="input__label" for="user-name">Имя:</label>
-              <input class="input__control" type="text" id="user-name" name="name" placeholder="Введите ваше имя*" value="">
+              <input class="input__control" type="text" id="user-name" name="name" placeholder="Введите ваше имя *" value="">
             </div>
             <div class="input">
               <label class="input__label" for="user-patronymic">Отчество:</label>
@@ -110,7 +110,7 @@
               </div>
               <div class="input input__contacts input__contacts--mail">
                 <label class="input__label input__label--contacts" for="user-mail">Адрес почты</label>
-                <input class="input__control input__control--mail" type="email" id="user-mail" name="mail" placeholder="Введите почту*" value="">
+                <input class="input__control input__control--mail" type="email" id="user-mail" name="mail" placeholder="Введите почту *" value="">
               </div>
             </div>
           </fieldset>
@@ -141,19 +141,20 @@
           <div class="competition-form__send container">
             <button class="competition-form__button button button--green" type="submit">Отправить форму</button>
             <small class="competition-form__legend competition-form__legend--top">
-              <sup class="competition-form__sup">*</sup> — Обязательные поля
+              <span class="competition-form__note"><sup class="competition-form__sup">*</sup>— Обязательные поля</span>
+              <span class="competition-form__note--desktop"><sup class="competition-form__sup">*</sup>— Обязательные для заполнения поля</span>
             </small>
           </div>
         </form>
       </section>
     </main>
     <footer class="page-footer container">
-      <a class="page-footer__logo" href="#">
+      <a class="page-footer__logo logo" href="#">
         <svg class="logo__mobile logo__footer" width="146.3px" height="40.375px">
           <use xlink:href="#logo-pink-blue-mobile"></use>
         </svg>
         <svg class="logo__tablet logo__footer" width="146.3px" height="40.375px">
-          <use xlink:href="#logo-footer-tablet"></use>
+          <use xlink:href="#logo-pink-blue-mobile"></use>
         </svg>
         <svg class="logo__desktop logo__footer" width="146.3px" height="40.375px">
           <use xlink:href="#logo-pink-blue-desktop"></use>
