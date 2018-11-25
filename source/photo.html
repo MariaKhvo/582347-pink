@@ -221,7 +221,7 @@
         <div class="container">
           <p class="personal-photo__slogan">Затмите их всех! Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось&nbsp;в телефоне!</p>
         </div>
-        <div class="personal-photo__choice">
+        <form class="personal-photo__choice">
           <div class="container">
             <div class="personal-photo__wrapper">
               <picture class="personal-photo__image">
@@ -235,22 +235,22 @@
               <div class="personal-photo__right">
                 <div class="personal-photo__filter">
                   <div class="personal-photo__effect">
-                    <div class="personal-photo__effect effect-filter">
-                      <button class="effect-filter__button button">
+                    <div class="personal-photo__effect-filter effect-filter">
+                      <button class="effect-filter__button button" type="button">
                         <svg class="effect-filter__svg effect-filter__svg--active" width="44px" height="44px">
                           <use xlink:href="#icon-editor-crop"></use>
                         </svg>
                       </button>
                     </div>
-                    <div class="personal-photo__effect effect-filter">
-                      <button class="effect-filter__button button">
+                    <div class="personal-photo__effect-filter effect-filter">
+                      <button class="effect-filter__button button" type="button">
                         <svg class="effect-filter__svg" width="48px" height="43px">
                           <use xlink:href="#icon-editor-fill"></use>
                         </svg>
                       </button>
                     </div>
-                    <div class="personal-photo__effect effect-filter">
-                      <button class="effect-filter__button button">
+                    <div class="personal-photo__effect-filter effect-filter">
+                      <button class="effect-filter__button button" type="button">
                         <svg class="effect-filter__svg effect-filter__svg--contrast" width="32px" height="32px">
                           <use xlink:href="#icon-editor-contrast"></use>
                         </svg>
@@ -266,15 +266,15 @@
                     </div>
                   </div>
                 </div>
-                <hr class="range__line">
+                <hr class="range">
                 <div class="personal-photo__button-group">
-                  <button class="personal-photo__button button button--round personal-photo__button--download" type="button">Запостить</button>
+                  <button class="personal-photo__button button button--round personal-photo__button--download" type="submit">Запостить</button>
                   <button class="personal-photo__button button button--round" type="button">Отмена</button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer container">

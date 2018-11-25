@@ -43,6 +43,12 @@
   }
 }
 
+.main-nav--nojs .main-nav__item {
+  @media (max-width: $tablet-width-only) {
+    display: block;
+  }
+}
+
 .main-nav__wrapper {
   width: 100%;
   top: 0;
