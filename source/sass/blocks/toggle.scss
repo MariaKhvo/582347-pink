@@ -1,10 +1,20 @@
 .toggle__button {
+  display: inline-block;
   padding: 0;
   margin: 0 8px;
   width: 6px;
   height: 6px;
+  background-color: #bec2c7;
   border-radius: 50%;
   border: none;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--active {
     width: 12px;

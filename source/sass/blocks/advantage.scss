@@ -78,6 +78,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 0;
     background-image: none;
   }

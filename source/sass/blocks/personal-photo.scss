@@ -80,12 +80,12 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     flex-wrap: nowrap;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 154px;
+    margin-bottom: 110px;
   }
 }
 
@@ -119,6 +119,8 @@
 }
 
 .personal-photo__button-group {
+  padding-top: 39px;
+
   @media (min-width: $tablet-width) {
     margin-left: 5px;
   }

@@ -23,18 +23,6 @@
     background-size: 100%;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 97px;
-    right: 44%;
-    width: 16px;
-    height: 16px;
-    background-color: $pink;
-    border-radius: 50%;
-    border: 10px solid $white;
-  }
-
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
     background-size: cover;

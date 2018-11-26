@@ -9,9 +9,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 20px;
+    padding-top: 6px;
     padding-bottom: 3px;
-    margin-left: 15px;
+    margin-left: 7px;
   }
 }
 
@@ -50,69 +50,109 @@
   }
 }
 
-.effect-filter__range {
+.effect-filter__slider {
   position: relative;
-  width: 202px;
-  height: 2px;
-  margin: 38px 0 32px 18px;
-  box-sizing: border-box;
-  background-color: $grey;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
-    top: -6px;
-    right: 33px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: 2px solid $pink;
-    background-color: $grey-light;
-  }
+    display: block;
+    width: 320px;
+    height: 1px;
+    bottom: 0;
+    left: -20px;
+    background: #dddfe0;
 
-  &:active::before {
-    background-color: $pink;
+    @media (min-width: $tablet-width) {
+      width: 275px;
+      left: -36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 410px;
+      left: -43px;
+    }
   }
+}
+
+.effect-filter__range {
+  width: 202px;
+  height: 2px;
+  margin: 36px 0 32px 18px;
+  box-sizing: border-box;
+  background-color: $grey;
 
   @media (max-width: $mobile-width-only) {
     display: none;
   }
 
   @media (min-width: $tablet-width) {
-    &:nth-child(1)::before {
-      right: 43px;
-    }
-
-    &:nth-child(2)::before {
-      right: 163px;
-    }
-
-    &:nth-child(3)::before {
-      right: 93px;
-    }
+    margin: 38px 0 32px 18px;
   }
 
   @media (min-width: $desktop-width) {
     width: 288px;
-    margin: 42px 0 26px 47px;
-
-    &:nth-child(1)::before {
-      right: 200px;
-    }
-
-    &:nth-child(2)::before {
-      right: 26px;
-    }
-
-    &:nth-child(3)::before {
-      right: 112px;
-    }
+    margin: 39px 0 31px 47px;
   }
 
   &--active {
     @media (max-width: $mobile-width-only) {
       display: block;
       width: 240px;
+    }
+  }
+}
+
+.effect-filter__toggle {
+  position: absolute;
+  top: 30px;
+  right: 33px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid $pink;
+  background-color: $grey-light;
+
+  &:active {
+    background-color: $pink;
+  }
+
+  &--fill,
+  &--contrast {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 32px;
+
+    &--crop {
+      right: 44px;
+    }
+
+    &--fill {
+      display: block;
+      right: 166px;
+    }
+
+    &--contrast {
+      display: block;
+      right: 93px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 36px;
+
+    &--crop {
+      right: 200px;
+    }
+
+    &--fill {
+      right: 26px;
+    }
+
+    &--contrast {
+      right: 112px;
     }
   }
 }

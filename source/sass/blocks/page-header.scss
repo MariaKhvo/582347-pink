@@ -4,7 +4,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center top;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 100%;
   background-color: $main-color;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -15,6 +15,7 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 5px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -35,9 +36,9 @@
   &--main {
     padding-bottom: 6px;
     background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-    background-position: 0 calc(50% - 50px), center top;
+    background-position: calc(50% - 30px) calc(50% - 48px), center top;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: auto, 100%;
     background-color: $main-color;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -50,7 +51,7 @@
       padding-bottom: 0;
       margin-bottom: 0;
       background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-      background-position: 50% calc(50% - -89px), top;
+      background-position: 50% calc(50% + 89px), top;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
@@ -59,9 +60,9 @@
     }
 
     @media (min-width: $desktop-width) {
-
       background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
       background-position: calc(50% + 70px) bottom, center bottom;
+      background-size: auto;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");

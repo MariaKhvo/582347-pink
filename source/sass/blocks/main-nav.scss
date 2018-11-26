@@ -37,6 +37,14 @@
   }
 }
 
+.main-nav--nojs {
+  background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
 .main-nav--nojs .main-nav__toggle {
   @media (max-width: $tablet-width-only) {
     display: none;
@@ -47,6 +55,10 @@
   @media (max-width: $tablet-width-only) {
     display: block;
   }
+}
+
+.main-nav--nojs .main-nav__list {
+  position: static;
 }
 
 .main-nav__wrapper {
