@@ -1,23 +1,43 @@
 .apps-store {
+  position: absolute;
+  bottom: -270px;
   width: 100%;
-  margin-top: 400px;
-  padding-bottom: 11px;
-  padding-top: 23px;
+  padding-bottom: 18px;
+  padding-top: 28px;
   color: $white;
   background-color: $grey;
 
   @media (min-width: $tablet-width) {
+    position: static;
     bottom: auto;
     width: 100%;
-    padding-top: 68px;
-    padding-bottom: 93px;
+    padding-top: 75px;
+    padding-bottom: 95px;
     margin: 0 auto;
-    background: 0 0;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: 50% calc(50% + 37px);
+    background-repeat: no-repeat;
+    background-size: 700px 545px;
+    background-color: transparent;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-size: 700px 545px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 93px;
     padding-bottom: 104px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: calc(50% + 70px) bottom;
+    background-size: auto;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: 1050px 645px;
+    }
   }
 }
 

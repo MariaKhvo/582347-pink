@@ -1,5 +1,6 @@
 .copyright {
   display: flex;
+  min-width: 132px;
   margin: 0 auto 73px;
   box-sizing: border-box;
 
@@ -18,9 +19,6 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
-  }
-
-  @media (min-width: $desktop-width) {
     margin: 14px 10px 0 0;
   }
 }

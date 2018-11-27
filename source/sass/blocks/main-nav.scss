@@ -31,6 +31,7 @@
   background-color: $grey;
 }
 
+
 .main-nav--closed .main-nav__item {
   @media (max-width: $tablet-width-only) {
     display: none;
