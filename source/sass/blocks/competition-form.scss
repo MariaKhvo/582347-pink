@@ -16,7 +16,7 @@
 }
 
 .competition-form__item {
-  padding: 28px 0 26px;
+  padding: 29px 0 26px;
   border: none;
 
   @media (min-width: $tablet-width) {
@@ -98,6 +98,8 @@
       position: absolute;
       top: -13px;
       left: 23px;
+      padding-top: 0;
+      padding-bottom: 0;
       background-color: $white;
     }
 
@@ -179,8 +181,8 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    margin-bottom: 68px;
-    padding-top: 56px;
+    margin-bottom: 69px;
+    padding-top: 60px;
     border: 2px solid $grey-light;
   }
 
@@ -208,9 +210,9 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding-top: 36px;
+    padding-top: 39px;
     padding-bottom: 10px;
-    margin-bottom: 63px;
+    margin-bottom: 67px;
   }
 }
 
@@ -221,7 +223,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding: 31px 58px 11px;
+    padding: 35px 58px 11px;
     margin-bottom: 70px;
     border: 2px solid $grey-light;
     background-color: $white;
@@ -242,7 +244,7 @@
     position: relative;
     order: 3;
     padding: 44px 58px 42px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     border: 2px solid #f2f2f2;
   }
 
@@ -250,7 +252,7 @@
     width: 100%;
     padding-bottom: 0;
     padding-top: 35px;
-    margin-bottom: 65px;
+    margin-bottom: 71px;
   }
 }
 
@@ -286,7 +288,8 @@
 
 .competition-form__send {
   order: 10;
-  margin-top: 46px;
+  margin-top: 50px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     display: flex;
